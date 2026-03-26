@@ -1,0 +1,541 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "products": "Products",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
+  "Home": {
+    "hero": {
+      "label": "",
+      "title": "Unlocking Visual Intelligence with the Power of Mathematics",
+      "description": "Originated from the Department of Mathematics at CUHK, transforming mathematical research in geometric analysis and quasiconformal mapping into AI-driven visual intelligence solutions",
+      "viewProducts": "View Products",
+      "contactUs": "Contact Us"
+    },
+    "projects": {
+      "title": "Core Business",
+      "description": "Applying mathematical research to solve real-world problems across different domains",
+      "items": {
+        "ais": {
+          "title": "Smart Healthcare",
+          "description": "AIS Scoliosis Intelligent Screening System - Radiation-free 3D scanning + AI analysis, clinic and home dual-mode"
+        },
+        "smartland": {
+          "title": "Smart Land",
+          "description": "Deep partnership with Beijing ViewTech - Video image intelligent analysis, farmland protection, illegal construction detection and more"
+        }
+      }
+    },
+    "advantages": {
+      "title": "Why Choose Us",
+      "items": {
+        "academic": {
+          "title": "Strong Academic Background",
+          "description": "Core team from CUHK Department of Mathematics"
+        },
+        "crossdisciplinary": {
+          "title": "Cross-disciplinary Integration",
+          "description": "Mathematics + Medicine + AI"
+        },
+        "clinical": {
+          "title": "Clinical Validation",
+          "description": "Partnerships with institutions like Prince of Wales Hospital"
+        },
+        "industry": {
+          "title": "Industry Deployment",
+          "description": "Real-world projects already implemented"
+        }
+      }
+    },
+    "cta": {
+      "title": "Join Us",
+      "description": "If you love mathematics and AI, and want to change the world with technology, GeometryVision is looking for like-minded partners. Welcome to join us!",
+      "ctaText": "Submit Resume"
+    },
+    "tech": {
+      "title": "Core Technologies",
+      "description": "Building leading visual AI technologies based on deep mathematical foundations",
+      "items": {
+        "geometric": {
+          "title": "Geometric Analysis",
+          "description": "Solving visual problems from mathematical theory"
+        },
+        "conformal": {
+          "title": "Quasi-conformal Mapping",
+          "description": "Establishing precise geometric correspondences"
+        },
+        "pde": {
+          "title": "PDE Numerical Methods",
+          "description": "Solving mathematical models for complex physical processes"
+        },
+        "deeplearning": {
+          "title": "Deep Learning",
+          "description": "Integrating mathematical priors with neural networks"
+        }
+      }
+    },
+    "partners": {
+      "title": "Partners",
+      "items": {
+        "cuhk": "Chinese University of Hong Kong",
+        "pwh": "Prince of Wales Hospital",
+        "sth": "Sha Tin Hospital",
+        "gfph": "Guangzhou First People's Hospital",
+        "bvt": "Beijing ViewTech",
+        "shsl": "S.H. Ho Spine Lab"
+      }
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "description": "Unlocking Visual Intelligence with the Power of Mathematics",
+    "mission": {
+      "title": "Our Mission",
+      "content": "GeometryVision is a technology startup originating from the Department of Mathematics at the Chinese University of Hong Kong. We are dedicated to applying mathematical research in geometric analysis and quasiconformal mapping to the field of visual AI, creating innovative products supported by mathematical theory.",
+      "content2": "We believe that the rigor and beauty of mathematics can bring new breakthroughs to AI technology. By combining profound mathematical theory with modern deep learning techniques, we provide our customers with more precise and reliable visual intelligence solutions."
+    },
+    "values": {
+      "title": "Core Values",
+      "description": "The beliefs that guide our journey",
+      "items": {
+        "innovation": "Innovation Driven",
+        "innovationDesc": "Building on mathematical theory to explore new possibilities in visual intelligence",
+        "precision": "Precision & Rigor",
+        "precisionDesc": "Pursuing mathematical precision to ensure reliable technical solutions",
+        "collaboration": "Collaborative Win-Win",
+        "collaborationDesc": "Growing with partners to create greater value together",
+        "excellence": "Pursuit of Excellence",
+        "excellenceDesc": "Continuously pushing technological boundaries to lead the industry"
+      }
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "items": {
+        "2023": "Company founded, seed round financing secured",
+        "2024_1": "Launched first visual AI products",
+        "2024_2": "Established partnerships with multiple enterprises",
+        "2025": "Expanded to international markets, built global partner network"
+      }
+    },
+    "teamPreview": {
+      "title": "Core Team",
+      "description": "From CUHK Department of Mathematics and leading industry institutions",
+      "foundingTeam": "Founding Team",
+      "foundingTeamDesc": "PhD from CUHK Mathematics, years of experience in geometric analysis",
+      "rdTeam": "R&D Team",
+      "rdTeamDesc": "Cross-disciplinary background in mathematics and computer science",
+      "advisors": "Advisory Board",
+      "advisorsDesc": "Internationally renowned scholars and industry experts providing strategic guidance",
+      "viewFullTeam": "View Full Team"
+    }
+  },
+  "Team": {
+    "title": "Our Team",
+    "description": "From CUHK Department of Mathematics, driving visual AI innovation with the power of mathematics",
+    "advantages": {
+      "title": "Team Advantages",
+      "description": "Deep academic foundation + Industry experience = True innovation",
+      "academic": "Academic Background",
+      "academicDesc": "Core team members from CUHK Mathematics, 50+ papers published in top journals",
+      "research": "Research Strength",
+      "researchDesc": "Specializing in geometric analysis and visual AI intersection, with multiple core patents",
+      "recognition": "Industry Recognition",
+      "recognitionDesc": "Multiple international academic awards, close partnerships with top research institutions",
+      "scale": "Team Scale",
+      "scaleDesc": "Team members from mathematics, computer science, medicine and other diverse backgrounds"
+    },
+    "coreMembers": {
+      "title": "Core Members",
+      "description": "Top industry talent, exploring the infinite possibilities of mathematics and AI together",
+      "chenran": {
+        "name": "LIN Chenran",
+        "education": "Ph.D., CUHK",
+        "role": "CEO",
+        "desc": "PhD from CUHK (2024), researcher in quasiconformal mapping and visual AI, leads overall strategy and product development",
+        "expertise": "Product Development, Strategic Planning, Deep Learning"
+      },
+      "lei": {
+        "name": "LUI Lok Ming",
+        "education": "Ph.D., UCLA",
+        "role": "Chief Scientist",
+        "desc": "Professor at CUHK Mathematics, Director of CMAI, leading authority in computational geometry with 100+ published papers",
+        "expertise": "Computational Geometry, Mathematical AI, Geometric Analysis"
+      },
+      "li": {
+        "name": "LI Zheng",
+        "education": "Ph.D., UCAS",
+        "role": "COO",
+        "desc": "PhD from UCAS (2014), co-founder of Outlook Shenzhou, deep expertise in spatio-temporal intelligence and earth science big data",
+        "expertise": "Spatio-temporal Intelligence, Earth Big Data, Operations"
+      },
+      "tan": {
+        "name": "TAN Xingzi",
+        "education": "M.Sc., CUHK",
+        "role": "CFO",
+        "desc": "M.Sc. from CUHK (2018), former analyst at BOCOM and DBS, specializing in financial risk and industry research",
+        "expertise": "Financial Risk Management, Industry Research, Investment Analysis"
+      }
+    },
+    "advisors": {
+      "title": "Advisory Board",
+      "description": "Internationally renowned scholars and industry experts providing strategic guidance",
+      "luo": {
+        "name": "LAW Sheung Wai",
+        "affiliation": "CUHK Department of Medicine",
+        "role": "Clinical Advisor",
+        "desc": "Clinical specialist in orthopedics and traumatology, senior expert in scoliosis"
+      },
+      "lee": {
+        "name": "LEE Yuk Wai",
+        "affiliation": "CUHK Department of Medicine",
+        "role": "Clinical Advisor",
+        "desc": "Professor of Orthopedics and Traumatology, PhD in Pharmacology (2009)"
+      }
+    },
+    "cta": {
+      "title": "Join Us",
+      "description": "If you love mathematics and AI, and want to change the world with technology, GeometryVision is looking for like-minded partners. Welcome to join us!",
+      "ctaText": "View Job Openings",
+      "secondaryCtaText": "Contact Us"
+    }
+  },
+  "Products": {
+    "title": "Products",
+    "description": "Mathematics-driven visual AI products, bringing you more precise and intelligent solutions",
+    "techAdvantage": {
+      "title": "Technical Advantages",
+      "description": "With deep mathematical foundation, our products have unique technical advantages",
+      "accuracy": "Recognition Accuracy",
+      "responseTime": "Response Time",
+      "scenarios": "Application Scenarios",
+      "latency": "Low Latency",
+      "robustness": "Robustness"
+    },
+    "cta": {
+      "title": "Want to Learn More About Our Products?",
+      "description": "Our team is ready to provide you with product demonstrations and technical consultation",
+      "ctaText": "Contact Us"
+    },
+    "items": {
+      "vision": {
+        "title": "Intelligent Vision Recognition",
+        "desc": "Geometry-based image recognition system providing high-precision target detection and recognition",
+        "features": "Geometry feature extraction, Multi-scale analysis, Real-time processing",
+        "status": "Launched"
+      },
+      "reconstruction": {
+        "title": "3D Reconstruction Engine",
+        "desc": "Using quasiconformal mapping technology for precise 3D model reconstruction and optimization",
+        "features": "High-precision reconstruction, Topology preservation, Texture mapping",
+        "status": "Beta"
+      },
+      "analytics": {
+        "title": "Visual Analytics Platform",
+        "desc": "Combining deep learning and mathematical modeling for in-depth visual data analysis",
+        "features": "Data visualization, Pattern recognition, Predictive analytics",
+        "status": "Launched"
+      },
+      "toolkit": {
+        "title": "Geometry Processing Toolkit",
+        "desc": "Developer-oriented geometry algorithm library supporting various geometric computing tasks",
+        "features": "API interfaces, SDK support, Comprehensive documentation",
+        "status": "In Development"
+      }
+    }
+  },
+  "Solutions": {
+    "title": "Solutions",
+    "description": "Tailored visual AI solutions for different industry needs",
+    "process": {
+      "step1": "Requirement",
+      "step1Desc": "Deep understanding of business scenarios and pain points",
+      "step2": "Design",
+      "step2Desc": "Customized technical solution development",
+      "step3": "Implement",
+      "step3Desc": "Agile development and iterative optimization",
+      "step4": "Support",
+      "step4Desc": "Operation maintenance and feature upgrades"
+    },
+    "cta": {
+      "title": "Find the Right Solution for Your Industry",
+      "description": "Discuss with our industry experts to explore how visual AI can empower your business",
+      "ctaText": "Consult Now"
+    },
+    "items": {
+      "manufacturing": {
+        "title": "Smart Manufacturing",
+        "desc": "Quality inspection, process optimization, and equipment monitoring solutions for manufacturing industry",
+        "apps": "Product defect detection, Precision dimensional measurement, Assembly process monitoring",
+        "benefits": "Improve production efficiency by 30%, reduce defect rate by 50%"
+      },
+      "healthcare": {
+        "title": "Smart Healthcare",
+        "desc": "Geometry-based medical image processing to assist doctors in precise diagnosis",
+        "apps": "Medical image analysis, Lesion detection and localization, Surgical navigation assistance",
+        "benefits": "Improve diagnostic accuracy, shorten diagnosis time"
+      },
+      "construction": {
+        "title": "Architecture & Surveying",
+        "desc": "3D reconstruction and geometry analysis technology for construction and surveying",
+        "apps": "Building 3D modeling, Topographic survey analysis, Structure deformation monitoring",
+        "benefits": "High-precision modeling, Fast data collection"
+      },
+      "retail": {
+        "title": "Smart Retail",
+        "desc": "Visual analysis technology empowering retail industry to improve operational efficiency and customer experience",
+        "apps": "Customer flow analysis, Product recognition, Smart checkout",
+        "benefits": "Optimize store operations, Increase sales conversion"
+      },
+      "transportation": {
+        "title": "Smart Transportation",
+        "desc": "Visual perception technology application in transportation to assist smart city construction",
+        "apps": "Vehicle recognition, Traffic flow analysis, Violation detection",
+        "benefits": "Improve traffic efficiency, Ensure travel safety"
+      },
+      "education": {
+        "title": "Research & Education",
+        "desc": "Advanced geometry computing tools and technical support for research institutions",
+        "apps": "Geometry algorithm research, Teaching demonstration system, Academic collaboration projects",
+        "benefits": "Accelerate research progress, Cultivate innovative talents"
+      }
+    },
+    "applications": "Application Scenarios"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "contactTitle": "Get in Touch",
+    "description": "We look forward to hearing from you to explore the infinite possibilities of visual intelligence",
+    "info": {
+      "email": {
+        "title": "Email",
+        "content": "contact@geometryvision.online"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "Hong Kong / Shenzhen"
+      },
+      "address": {
+        "title": "Address",
+        "content": "Hong Kong / Shenzhen"
+      }
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday: 9:00 - 18:00 (Beijing Time)",
+      "response": "We will respond within 1-2 business days"
+    },
+    "form": {
+      "formTitle": "Send a Message",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company / Organization",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "namePlaceholder": "Your name",
+      "companyPlaceholder": "Your company or organization",
+      "messagePlaceholder": "Please describe your requirements or questions in detail...",
+      "subjectPlaceholder": "Please select a topic",
+      "subjects": {
+        "product": "Product Inquiry",
+        "solution": "Solutions",
+        "partnership": "Business Partnership",
+        "career": "Career Opportunities",
+        "other": "Other"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "How can I get a product demo?",
+      "a1": "You can submit an application through the form above, or send an email to contact@geometryvision.online. We will contact you shortly to arrange a demo.",
+      "q2": "Do you provide customized development services?",
+      "a2": "Yes, we provide customized solution development services. Please describe your requirements in detail, and our technical team will evaluate and provide a solution.",
+      "q3": "How can I join the GeometryVision team?",
+      "a3": "We welcome talents passionate about visual AI and mathematics research. Please send your resume to contact@geometryvision.online, indicating the position you are applying for."
+    }
+  },
+  "Project": {
+    "AIS": {
+      "hero": {
+        "title": "AIS Scoliosis Intelligent Screening System",
+        "description": "Radiation-free 3D scanning + AI intelligent analysis, protecting adolescent spine health"
+      },
+      "problem": "Current Situation",
+      "problemItems": {
+        "1": "Adolescent scoliosis prevalence rate as high as 5-6% in China",
+        "2": "Early symptoms are not obvious, often missed the best intervention period",
+        "3": "Traditional X-ray examinations involve radiation, preventing frequent screening",
+        "4": "Insufficient professional screening resources, limited coverage"
+      },
+      "solution": "Our Solution",
+      "solutionItems": {
+        "1": "Optical 3D scanning, completely radiation-free",
+        "2": "AI-assisted analysis, fast and accurate",
+        "3": "Portable device, on-site screening possible",
+        "4": "Continuous tracking, protecting growth"
+      },
+      "features": {
+        "title": "Core Features",
+        "description": "Technology empowerment, making spine screening simpler and safer",
+        "scan": {
+          "title": "Radiation-free 3D Scanning",
+          "description": "Using safe optical scanning technology, no X-rays, no radiation harm to adolescents"
+        },
+        "ai": {
+          "title": "AI Intelligent Analysis",
+          "description": "Deep learning-based automatic analysis algorithm, quickly and accurately identifying scoliosis risks"
+        },
+        "dual": {
+          "title": "Dual-mode Application",
+          "description": "Supports professional clinic end and home end, meeting different screening scenarios"
+        }
+      },
+      "scenarios": {
+        "title": "Application Scenarios",
+        "clinic": {
+          "title": "Clinic Version",
+          "description": "For professional medical teams, supporting batch screening, data management and report generation",
+          "users": "Hospitals, clinics, health check centers"
+        },
+        "home": {
+          "title": "Home Version",
+          "description": "Parents can independently complete preliminary screening, monitoring children's spine health anytime",
+          "users": "Schools, families, health management institutions"
+        }
+      },
+      "techAdvantage": {
+        "items": {
+          "1": "Optical 3D scanning, no radiation",
+          "2": "AI automatic analysis, results in 5 seconds",
+          "3": "Portable device, on-site screening",
+          "4": "Cloud data storage, trend tracking",
+          "5": "Professional reports, assist diagnostic decisions"
+        }
+      },
+      "partners": "Partners",
+      "cta": {
+        "title": "Learn More",
+        "description": "Medical institutions, health check centers and educational institutions are welcome to consult",
+        "ctaText": "Contact Us",
+        "secondaryCtaText": "View More Products"
+      }
+    },
+    "SmartLand": {
+      "hero": {
+        "title": "Smart Land Solution",
+        "description": "Video image intelligent analysis, protecting every inch of land"
+      },
+      "problem": "Regulatory Challenges",
+      "problemItems": {
+        "1": "Large land area, low efficiency of manual patrols",
+        "2": "Illegal activities are hidden, often discovered too late",
+        "3": "Difficult to preserve evidence, insufficient legal basis",
+        "4": "Data silos between departments, difficult coordination"
+      },
+      "solution": "Intelligent Solution",
+      "solutionItems": {
+        "1": "24/7 automatic monitoring, unattended",
+        "2": "AI real-time analysis, immediate alerts for anomalies",
+        "3": "Complete evidence chain, stronger enforcement",
+        "4": "Data connectivity, cross-department collaboration"
+      },
+      "features": {
+        "title": "Core Features",
+        "description": "Multi-technology integration, building a comprehensive land smart supervision system",
+        "video": {
+          "title": "Intelligent Video Analysis",
+          "description": "Deep learning-based video image processing technology, achieving real-time target detection and tracking"
+        },
+        "farmland": {
+          "title": "Farmland Protection",
+          "description": "Automated monitoring of farmland changes, timely detection of illegal occupation and destruction"
+        },
+        "building": {
+          "title": "Illegal Construction Detection",
+          "description": "Intelligent identification of illegal buildings, assisting law enforcement for quick response"
+        }
+      },
+      "scenarios": {
+        "title": "Application Scenarios",
+        "natural": {
+          "title": "Natural Resource Monitoring",
+          "description": "Dynamic monitoring of natural resources like farmland, forest, and grassland, timely detection of occupation and destruction",
+          "cases": [
+            "Illegal farmland occupation monitoring",
+            "Farmland abandonment detection",
+            "Forest destruction early warning"
+          ]
+        },
+        "urban": {
+          "title": "Urban Planning Supervision",
+          "description": "Assisting urban planning departments in construction behavior supervision, identifying unapproved construction and overtime construction",
+          "cases": [
+            "Automatic illegal construction detection",
+            "Construction progress monitoring",
+            "Planning verification assistance"
+          ]
+        },
+        "environment": {
+          "title": "Environmental Protection Patrol",
+          "description": "Smart monitoring of nature reserves, wetlands, and ecological red-line areas to protect the environment",
+          "cases": [
+            "Ecological destruction monitoring",
+            "Sewage outlet detection",
+            "Waste sorting inspection"
+          ]
+        },
+        "emergency": {
+          "title": "Emergency Response Support",
+          "description": "During natural disasters, quickly assess affected areas to assist emergency command decisions",
+          "cases": [
+            "Flood disaster assessment",
+            "Landslide monitoring",
+            "Fire area calculation"
+          ]
+        }
+      },
+      "techAdvantage": {
+        "items": {
+          "1": "Multi-source data fusion, satellite + drone + camera",
+          "2": "AI target detection, 95%+ accuracy",
+          "3": "Edge computing, real-time analysis support",
+          "4": "Cloud management, cross-region unified scheduling",
+          "5": "Open API, easy system integration"
+        }
+      },
+      "partners": "Strategic Cooperation",
+      "partnerDescription": "GeometryVision has established a deep strategic partnership with Beijing Liwnas Technology Co., Ltd., combining strengths in AI visual analysis and land informatization to provide intelligent solutions for natural resource management, urban planning, environmental protection and other fields.",
+      "cta": {
+        "title": "Start Your Smart Land Journey",
+        "description": "Government departments and partners are welcome to consult and cooperate to protect land security together",
+        "ctaText": "Contact Us",
+        "secondaryCtaText": "View Solutions"
+      }
+    }
+  },
+  "Common": {
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "applyNow": "Apply Now",
+    "contactUs": "Contact Us"
+  },
+  "SEO": {
+    "title": "GeometryVision - Unlocking New Visions of Visual Intelligence Through Mathematics",
+    "description": "A tech startup from the Department of Mathematics at CUHK, applying geometric analysis and quasi-conformal mapping to visual AI",
+    "keywords": "visual AI,geometric analysis,quasi-conformal mapping,deep learning,CUHK,artificial intelligence",
+    "brand": "GeometryVision"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "backHome": "Back to Home"
+  },
+  "Loading": {
+    "brand": "GeometryVision",
+    "text": "Loading..."
+  }
+}

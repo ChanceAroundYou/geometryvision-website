@@ -1,0 +1,539 @@
+{
+  "Navigation": {
+    "home": "首頁",
+    "about": "關於",
+    "team": "團隊",
+    "products": "產品",
+    "solutions": "解決方案",
+    "contact": "聯繫"
+  },
+  "Home": {
+    "hero": {
+      "label": "",
+      "title": "用數學的力量開啟視覺智慧的新視界",
+      "description": "源自香港中文大學數學系，將幾何分析與擬共形映射等數學研究成果轉化為 AI 驅動的視覺智慧解決方案",
+      "viewProducts": "查看產品",
+      "contactUs": "聯繫我們"
+    },
+    "cta": {
+      "title": "加入我們",
+      "description": "如果你熱愛數學、熱愛 AI，渴望用技術改變世界，幾何視界正在尋找志同道合的夥伴，歡迎加入我們！",
+      "ctaText": "投遞簡歷"
+    },
+    "projects": {
+      "title": "核心業務",
+      "description": "將數學研究成果應用於不同領域，解決實際問題",
+      "items": {
+        "ais": {
+          "title": "智慧醫療",
+          "description": "AIS脊柱側彎智能篩查系統，無輻射3D掃描+AI分析，診所端+家庭端雙模式"
+        },
+        "smartland": {
+          "title": "智慧國土",
+          "description": "與北京瞭望神州深度合作，視頻圖像智能分析，耕地保護、違建檢測等應用場景"
+        }
+      }
+    },
+    "advantages": {
+      "title": "為什麼選擇我們",
+      "items": {
+        "academic": {
+          "title": "學術背景深厚",
+          "description": "核心團隊來自 CUHK 數學系"
+        },
+        "crossdisciplinary": {
+          "title": "跨學科融合",
+          "description": "數學 + 醫學 + AI"
+        },
+        "clinical": {
+          "title": "臨床驗證",
+          "description": "與威爾斯親王醫院等機構合作"
+        },
+        "industry": {
+          "title": "產業落地",
+          "description": "已實現項目落地應用"
+        }
+      }
+    },
+    "tech": {
+      "title": "核心技術",
+      "description": "基於深厚的數學積累，打造領先的視覺 AI 技術",
+      "items": {
+        "geometric": {
+          "title": "幾何分析",
+          "description": "從數學理論出發，解決視覺問題"
+        },
+        "conformal": {
+          "title": "擬共形映射",
+          "description": "建立精確的幾何對應關係"
+        },
+        "pde": {
+          "title": "PDE 數值方法",
+          "description": "求解複雜物理過程的數學模型"
+        },
+        "deeplearning": {
+          "title": "深度學習",
+          "description": "將數學先驗與神經網絡融合"
+        }
+      }
+    },
+    "partners": {
+      "title": "合作夥伴",
+      "items": {
+        "cuhk": "香港中文大學",
+        "pwh": "威爾斯親王醫院",
+        "sth": "沙田醫院",
+        "gfph": "廣州第一人民醫院",
+        "bvt": "北京瞭望神州",
+        "shsl": "S.H. Ho 脊柱側彎研究實驗室"
+      }
+    }
+  },
+  "About": {
+    "title": "關於我們",
+    "description": "用數學的力量，開啟視覺智慧的新視界",
+    "mission": {
+      "title": "我們的使命",
+      "content": "幾何視界是一家源自香港中文大學數學系的科技創業公司。我們致力於將幾何分析與擬共形映射等數學研究成果應用於視覺AI領域，打造具有數學理論支撐的創新產品。",
+      "content2": "我們相信，數學的嚴謹性和優美性能夠為AI技術帶來新的突破。通過將深厚的數學理論與現代深度學習技術相結合，我們為客戶提供更精準、更可靠的視覺智慧解決方案。"
+    },
+    "values": {
+      "title": "核心價值觀",
+      "description": "指引我們前行的信念",
+      "items": {
+        "innovation": "創新驅動",
+        "innovationDesc": "以數學理論為基礎，探索視覺智慧的新可能",
+        "precision": "精準嚴謹",
+        "precisionDesc": "追求數學般的精確，確保技術方案的可靠性",
+        "collaboration": "協作共贏",
+        "collaborationDesc": "與合作夥伴共同成長，創造更大的價值",
+        "excellence": "追求卓越",
+        "excellenceDesc": "不斷突破技術邊界，引領行業發展"
+      }
+    },
+    "timeline": {
+      "title": "發展歷程",
+      "items": {
+        "2023": "公司成立，獲得種子輪融資",
+        "2024_1": "推出首批視覺AI產品",
+        "2024_2": "與多家企業建立合作關係",
+        "2025": "拓展國際市場，建立全球合作夥伴網絡"
+      }
+    },
+    "teamPreview": {
+      "title": "核心團隊",
+      "description": "來自香港中文大學數學系及業界頂尖機構",
+      "foundingTeam": "創始團隊",
+      "foundingTeamDesc": "香港中文大學數學系博士，深耕幾何分析領域多年",
+      "rdTeam": "研發團隊",
+      "rdTeamDesc": "數學、計算機科學交叉背景，技術實力雄厚",
+      "advisors": "顧問團隊",
+      "advisorsDesc": "國際知名學者與行業專家提供戰略指導",
+      "viewFullTeam": "查看完整團隊"
+    }
+  },
+  "Team": {
+    "title": "核心團隊",
+    "description": "源自香港中文大學數學系，用數學的力量推動視覺 AI 革新",
+    "advantages": {
+      "title": "團隊優勢",
+      "description": "深厚學術積累 + 產業落地經驗 = 真正的創新",
+      "academic": "學術背景",
+      "academicDesc": "核心團隊成員均來自 CUHK 數學系，在國際頂級期刊發表論文 50+ 篇",
+      "research": "研究實力",
+      "researchDesc": "專注於幾何分析與視覺 AI 的交叉研究，擁有多項核心專利技術",
+      "recognition": "行業認可",
+      "recognitionDesc": "獲得多項國際學術獎項，與全球頂尖研究機構保持緊密合作",
+      "scale": "團隊規模",
+      "scaleDesc": "團隊成員來自數學、計算機科學、醫學等多元背景，跨學科融合創新"
+    },
+    "coreMembers": {
+      "title": "核心成員",
+      "description": "行業頂尖人才，共同探索數學與 AI 的無限可能",
+      "chenran": {
+        "name": "林陳冉",
+        "education": "博士, 香港中文大學",
+        "role": "CEO",
+        "desc": "CUHK數學博士（2024），研究拟共形映射與視覺 AI，師從雷樂銘教授，主導整體戰略與產品研發",
+        "expertise": "產品研發, 戰略規劃, 深度學習"
+      },
+      "lei": {
+        "name": "雷樂銘",
+        "education": "博士, 應用數學, 加州大學洛杉磯分校",
+        "role": "首席科學家",
+        "desc": "CUHK數學系教授，CMAI 主任，計算幾何領域知名學者，已發表百餘篇學術論文",
+        "expertise": "計算幾何, 數學人工智能, 幾何分析"
+      },
+      "li": {
+        "name": "李政",
+        "education": "博士, 中國科學院大學",
+        "role": "首席運營官",
+        "desc": "中國科學院大學博士（2014），瞭望神州聯合創始人，深耕時空智能與地球科學大數據",
+        "expertise": "時空智能, 地球大數據, 產業運營"
+      },
+      "tan": {
+        "name": "譚星子",
+        "education": "碩士, 香港中文大學 (2018)",
+        "role": "首席財務官",
+        "desc": "CUHK碩士（2018），曾任職交通銀行國際及星展銀行，專注金融風險與行業研究",
+        "expertise": "金融風險管理, 行業研究, 投資分析"
+      }
+    },
+    "advisors": {
+      "title": "顧問團隊",
+      "description": "國際知名學者與行業專家，為團隊提供戰略指導",
+      "luo": {
+        "name": "羅尚尉",
+        "affiliation": "CUHK醫學院",
+        "role": "臨床顧問",
+        "desc": "骨科與創傷學臨床專業顧問，脊柱側彎領域資深專家"
+      },
+      "lee": {
+        "name": "李郁偉",
+        "affiliation": "CUHK醫學院",
+        "role": "臨床顧問",
+        "desc": "骨科與創傷學教授，藥理學博士 (2009)"
+      }
+    },
+    "cta": {
+      "title": "加入我們",
+      "description": "如果你熱愛數學、熱愛 AI，渴望用技術改變世界，幾何視界正在尋找志同道合的夥伴，歡迎加入我們！",
+      "ctaText": "查看招聘信息",
+      "secondaryCtaText": "聯繫我們"
+    }
+  },
+  "Products": {
+    "title": "產品中心",
+    "description": "數學驅動的視覺AI產品，為您帶來更精準、更智慧的解決方案",
+    "techAdvantage": {
+      "title": "技術優勢",
+      "description": "基於深厚的數學積累，我們的產品具有獨特的技術優勢",
+      "accuracy": "識別準確率",
+      "responseTime": "響應時間",
+      "scenarios": "應用場景"
+    },
+    "cta": {
+      "title": "想了解更多產品詳情？",
+      "description": "我們的團隊隨時為您提供產品演示和技術咨詢",
+      "ctaText": "聯繫我們"
+    },
+    "items": {
+      "vision": {
+        "title": "智慧視覺識別",
+        "desc": "基於幾何分析的圖像識別系統，提供高精度的目標檢測與識別能力",
+        "features": "幾何特徵提取, 多尺度分析, 即時處理",
+        "status": "已上線"
+      },
+      "reconstruction": {
+        "title": "三維重建引擎",
+        "desc": "利用擬共形映射技術，實現精確的三維模型重建與優化",
+        "features": "高精度重建, 拓撲保持, 紋理映射",
+        "status": "測試中"
+      },
+      "analytics": {
+        "title": "視覺分析平台",
+        "desc": "結合深度學習與數學建模，提供深度視覺數據分析服務",
+        "features": "數據可視化, 模式識別, 預測分析",
+        "status": "已上線"
+      },
+      "toolkit": {
+        "title": "幾何處理工具包",
+        "desc": "面向開發者的幾何算法庫，支持多種幾何計算任務",
+        "features": "API接口, SDK支持, 文檔完善",
+        "status": "開發中"
+      }
+    }
+  },
+  "Solutions": {
+    "title": "解決方案",
+    "description": "針對不同行業需求，提供定制化的視覺AI解決方案",
+    "process": {
+      "step1": "需求溝通",
+      "step1Desc": "深入了解業務場景與痛點",
+      "step2": "方案設計",
+      "step2Desc": "定製專屬技術解決方案",
+      "step3": "開發實施",
+      "step3Desc": "敏捷開發與迭代優化",
+      "step4": "持續支持",
+      "step4Desc": "運維保障與功能升級"
+    },
+    "cta": {
+      "title": "找到適合您行業的解決方案",
+      "description": "與我們的行業專家交流，探索視覺AI如何賦能您的業務",
+      "ctaText": "咨詢解決方案"
+    },
+    "items": {
+      "manufacturing": {
+        "title": "智能製造",
+        "desc": "為製造業提供質量檢測、工藝優化、設備監控等智能視覺解決方案",
+        "apps": "產品缺陷檢測, 尺寸精密測量, 裝配過程監控",
+        "benefits": "提高生產效率30%，降低不良率50%"
+      },
+      "healthcare": {
+        "title": "智慧醫療",
+        "desc": "基於幾何分析的醫學圖像處理，輔助醫生進行精準診斷",
+        "apps": "醫學影像分析, 病灶檢測定位, 手術導航輔助",
+        "benefits": "提升診斷準確率，縮短診斷時間"
+      },
+      "construction": {
+        "title": "建築與測繪",
+        "desc": "三維重建與幾何分析技術在建築和測繪領域的創新應用",
+        "apps": "建築三維建模, 地型測繪分析, 結構變形監測",
+        "benefits": "高精度建模，快速數據采集"
+      },
+      "retail": {
+        "title": "智慧零售",
+        "desc": "視覺分析技術賦能零售行業，提升運營效率和客戶體驗",
+        "apps": "客流分析, 商品識別, 智能結算",
+        "benefits": "優化店鋪運營，提升銷售轉化"
+      },
+      "transportation": {
+        "title": "智能交通",
+        "desc": "視覺感知技術在交通領域的應用，助力智慧城市建設",
+        "apps": "車輛識別, 交通流量分析, 違章檢測",
+        "benefits": "提升交通效率，保障出行安全"
+      },
+      "education": {
+        "title": "科研與教育",
+        "desc": "為科研機構提供先進的幾何計算工具和技術支持",
+        "apps": "幾何算法研究, 教學演示系統, 學術合作項目",
+        "benefits": "加速科研進程，培養創新人才"
+      }
+    },
+    "applications": "應用場景"
+  },
+  "Contact": {
+    "title": "聯繫我們",
+    "contactTitle": "聯繫我們",
+    "description": "期待與您的交流，共同探索視覺智慧的無限可能",
+    "info": {
+      "email": {
+        "title": "郵箱",
+        "content": "contact@geometryvision.online"
+      },
+      "phone": {
+        "title": "電話",
+        "content": "香港 / 深圳"
+      },
+      "address": {
+        "title": "地址",
+        "content": "香港 / 深圳"
+      }
+    },
+    "hours": {
+      "title": "工作時間",
+      "weekdays": "週一至週五: 9:00 - 18:00 (北京時間)",
+      "response": "我們會在1-2個工作日內回覆您的留言"
+    },
+    "form": {
+      "formTitle": "發送訊息",
+      "name": "姓名",
+      "email": "郵箱",
+      "company": "公司/機構",
+      "subject": "主題",
+      "message": "留言內容",
+      "submit": "發送訊息",
+      "sending": "發送中...",
+      "namePlaceholder": "您的姓名",
+      "companyPlaceholder": "您的公司或機構名稱",
+      "messagePlaceholder": "請詳細描述您的需求或問題...",
+      "subjectPlaceholder": "請選擇諮詢主題",
+      "subjects": {
+        "product": "產品諮詢",
+        "solution": "解決方案",
+        "partnership": "商務合作",
+        "career": "人才招募",
+        "other": "其他"
+      }
+    },
+    "faq": {
+      "title": "常見問題",
+      "q1": "如何獲取產品演示？",
+      "a1": "您可以通過上方的表單提交申請，或直接發送郵件至 contact@geometryvision.online，我們會盡快與您聯繫安排演示。",
+      "q2": "是否提供定制化開發服務？",
+      "a2": "是的，我們提供定制化解決方案開發服務。請詳細描述您的需求，我們的技術團隊會評估並為您提供方案。",
+      "q3": "如何加入幾何視界團隊？",
+      "a3": "我們歡迎有志於視覺AI和數學研究的人才加入。請將簡歷發送至 contact@geometryvision.online，註明應聘職位。"
+    }
+  },
+  "Project": {
+    "AIS": {
+      "hero": {
+        "title": "AIS脊柱側彎智能篩查系統",
+        "description": "無輻射3D掃描 + AI智能分析，守護青少年脊柱健康"
+      },
+      "problem": "現狀堪憂",
+      "problemItems": {
+        "1": "我國青少年脊柱側彎發病率高達5-6%",
+        "2": "早期症狀不明顯，發現時常已錯過最佳干預期",
+        "3": "傳統X光檢查有輻射，無法頻繁篩查",
+        "4": "專業篩查資源不足，覆蓋面有限"
+      },
+      "solution": "我們的方案",
+      "solutionItems": {
+        "1": "光學3D掃描，完全無輻射",
+        "2": "AI輔助分析，快速精準",
+        "3": "便攜設備，可上門服務",
+        "4": "持續追蹤，守護成長"
+      },
+      "features": {
+        "title": "核心功能",
+        "description": "科技賦能，讓脊柱篩查更簡單、更安全",
+        "scan": {
+          "title": "無輻射3D掃描",
+          "description": "採用安全的光學掃描技術，無需X射線，對青少年身體無任何輻射傷害"
+        },
+        "ai": {
+          "title": "AI智能分析",
+          "description": "基於深度學習的自動分析算法，快速準確識別脊柱側彎風險"
+        },
+        "dual": {
+          "title": "雙模式應用",
+          "description": "支持診所專業端和家庭端，滿足不同場景的篩查需求"
+        }
+      },
+      "scenarios": {
+        "title": "應用場景",
+        "clinic": {
+          "title": "診所端",
+          "description": "專業醫療團隊使用，支持批量篩查、數據管理和報告生成",
+          "users": "醫院、診所、體檢中心"
+        },
+        "home": {
+          "title": "家庭端",
+          "description": "家長可自主完成初步篩查，隨時監測孩子脊柱健康狀況",
+          "users": "學校、家庭、健康管理機構"
+        }
+      },
+      "techAdvantage": {
+        "items": {
+          "1": "光學3D掃描，無輻射",
+          "2": "AI自動分析，5秒內出結果",
+          "3": "便攜設備，上門篩查",
+          "4": "數據雲端存儲，追蹤趨勢",
+          "5": "專業報告，輔助診斷決策"
+        }
+      },
+      "partners": "合作夥伴",
+      "cta": {
+        "title": "了解更多詳情",
+        "description": "歡迎醫療機構、體檢中心及教育機構咨詢合作",
+        "ctaText": "聯繫我們",
+        "secondaryCtaText": "查看更多產品"
+      }
+    },
+    "SmartLand": {
+      "hero": {
+        "title": "智慧國土解決方案",
+        "description": "視頻圖像智能分析，守護每一寸土地"
+      },
+      "problem": "監管難點",
+      "problemItems": {
+        "1": "土地面積大，人工巡查效率低",
+        "2": "違法行為隱蔽，發現不及時",
+        "3": "證據固定難，執法依據不足",
+        "4": "部門數據孤島，協同困難"
+      },
+      "solution": "智能方案",
+      "solutionItems": {
+        "1": "24小時自動監測，無需值守",
+        "2": "AI實時分析，異常立即預警",
+        "3": "完整證據鏈，執法更有力",
+        "4": "數據互聯，跨部門協同"
+      },
+      "features": {
+        "title": "核心功能",
+        "description": "多種技術融合，打造全方位國土智能監管體系",
+        "video": {
+          "title": "智能視頻分析",
+          "description": "基於深度學習的視頻圖像處理技術，實現實時目標檢測與追蹤"
+        },
+        "farmland": {
+          "title": "耕地保護",
+          "description": "自動化監測耕地變化，及時發現佔用、破壞等違法行為"
+        },
+        "building": {
+          "title": "違建檢測",
+          "description": "智能識別違規建築，輔助執法部門快速響應和處理"
+        }
+      },
+      "scenarios": {
+        "title": "應用場景",
+        "natural": {
+          "title": "自然資源監測",
+          "description": "對耕地、林地、草地等自然資源進行動態監測，及時發現佔用和破壞行為",
+          "cases": [
+            "非法佔用耕地監測",
+            "耕地撂荒檢測",
+            "林地破壞預警"
+          ]
+        },
+        "urban": {
+          "title": "城鄉規劃監管",
+          "description": "輔助城鄉規劃部門進行建設行為監管，識別未批先建、超期建設等違規行為",
+          "cases": [
+            "違建自動識別",
+            "施工進度監控",
+            "規劃核實輔助"
+          ]
+        },
+        "environment": {
+          "title": "環境保護巡查",
+          "description": "對自然保護區、濕地、生態紅線區域進行智能監控，保護生態環境",
+          "cases": [
+            "生態破壞監測",
+            "排污口檢測",
+            "垃圾分類巡查"
+          ]
+        },
+        "emergency": {
+          "title": "應急響應支持",
+          "description": "在自然災害發生時，快速評估受災區域，輔助應急指揮決策",
+          "cases": [
+            "洪澇災害評估",
+            "山體滑坡監測",
+            "火災面積測算"
+          ]
+        }
+      },
+      "techAdvantage": {
+        "items": {
+          "1": "多源數據融合，衛星+無人機+攝像頭",
+          "2": "AI目標檢測，準確率95%以上",
+          "3": "邊緣計算，支持即時分析",
+          "4": "雲端管理，跨區域統一調度",
+          "5": "開放API，便於系統集成"
+        }
+      },
+      "partners": "戰略合作",
+      "partnerDescription": "幾何視界與北京瞭望神州科技有限公司建立深度戰略合作夥伴關係，結合雙方在AI視覺分析和國土信息化領域的優勢，共同為自然資源管理、城鄉規劃、環境保護等領域提供智能化解決方案。",
+      "cta": {
+        "title": "開啟智慧國土新篇章",
+        "description": "歡迎政府部門、合作夥伴咨詢合作，共同守護國土安全",
+        "ctaText": "聯繫我們",
+        "secondaryCtaText": "查看解決方案"
+      }
+    }
+  },
+  "Common": {
+    "learnMore": "了解更多",
+    "viewDetails": "查看詳情",
+    "applyNow": "立即申請",
+    "contactUs": "聯繫我們"
+  },
+  "SEO": {
+    "title": "幾何視界 GeometryVision - 用數學的力量，開啟視覺智能的新視界",
+    "description": "源自香港中文大學數學系的科技創業公司，將幾何分析與擬共形映射等數學研究成果應用於視覺AI領域",
+    "keywords": "視覺AI,幾何分析,擬共形映射,深度學習,香港中文大學,人工智能",
+    "brand": "幾何視界"
+  },
+  "NotFound": {
+    "title": "頁面未找到",
+    "description": "抱歉，您訪問的頁面不存在。",
+    "backHome": "返回首頁"
+  },
+  "Loading": {
+    "brand": "幾何視界",
+    "text": "載入中..."
+  }
+}

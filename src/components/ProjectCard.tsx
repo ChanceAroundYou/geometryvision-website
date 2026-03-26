@@ -6,9 +6,10 @@ interface ProjectCardProps {
   description: string;
   icon: string;
   href: string;
+  learnMore: string;
 }
 
-export function ProjectCard({ title, description, icon, href }: ProjectCardProps) {
+export function ProjectCard({ title, description, icon, href, learnMore }: ProjectCardProps) {
   return (
     <Link
       href={href}
@@ -20,7 +21,7 @@ export function ProjectCard({ title, description, icon, href }: ProjectCardProps
       </h3>
       <p className="text-gray-600 mb-4">{description}</p>
       <div className="flex items-center text-[#0066FF] font-medium">
-        <span>了解更多</span>
+        <span>{learnMore}</span>
         <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </div>
     </Link>

@@ -1,4 +1,8 @@
-export default function Loading() {
+import { getTranslations } from "next-intl/server";
+
+export default async function Loading() {
+  const t = await getTranslations("Loading");
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#003366] to-[#0066FF]">
       <div className="text-center">
@@ -11,9 +15,9 @@ export default function Loading() {
           <div className="absolute inset-4 bg-white/20 rounded-full animate-pulse"></div>
         </div>
         <h2 className="text-2xl font-semibold text-white mb-2">
-          几何视界
+          {t("brand")}
         </h2>
-        <p className="text-white/70 text-sm">加载中...</p>
+        <p className="text-white/70 text-sm">{t("text")}</p>
       </div>
     </div>
   );

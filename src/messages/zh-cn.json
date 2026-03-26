@@ -1,0 +1,527 @@
+{
+  "Navigation": {
+    "home": "首页",
+    "about": "关于",
+    "team": "团队",
+    "products": "产品",
+    "solutions": "解决方案",
+    "contact": "联系"
+  },
+  "Home": {
+    "hero": {
+      "label": "",
+      "title": "用数学的力量开启视觉智能的新视界",
+      "description": "源自香港中文大学数学系，将几何分析与拟共形映射等数学研究成果转化为 AI 驱动的视觉智能解决方案",
+      "viewProducts": "查看产品",
+      "contactUs": "联系我们"
+    },
+    "cta": {
+      "title": "加入我们",
+      "description": "如果你热爱数学、热爱 AI，渴望用技术改变世界，几何视界正在寻找志同道合的伙伴，欢迎加入我们！",
+      "ctaText": "投递简历"
+    },
+    "projects": {
+      "title": "核心业务",
+      "description": "将数学研究成果应用于不同领域，解决实际问题",
+      "items": {
+        "ais": {
+          "title": "智慧医疗",
+          "description": "AIS脊柱侧弯智能筛查系统，无辐射3D扫描+AI分析，诊所端+家庭端双模式"
+        },
+        "smartland": {
+          "title": "智慧国土",
+          "description": "与北京瞭望神州深度合作，视频图像智能分析，耕地保护、违建检测等应用场景"
+        }
+      }
+    },
+    "advantages": {
+      "title": "为什么选择我们",
+      "items": {
+        "academic": {
+          "title": "学术背景深厚",
+          "description": "核心团队来自 CUHK 数学系"
+        },
+        "crossdisciplinary": {
+          "title": "跨学科融合",
+          "description": "数学 + 医学 + AI"
+        },
+        "clinical": {
+          "title": "临床验证",
+          "description": "与威尔斯亲王医院等机构合作"
+        },
+        "industry": {
+          "title": "产业落地",
+          "description": "已实现项目落地应用"
+        }
+      }
+    },
+    "tech": {
+      "title": "核心技术",
+      "description": "基于深厚的数学积累，打造领先的视觉 AI 技术",
+      "items": {
+        "geometric": {
+          "title": "几何分析",
+          "description": "从数学理论出发，解决视觉问题"
+        },
+        "conformal": {
+          "title": "拟共形映射",
+          "description": "建立精确的几何对应关系"
+        },
+        "pde": {
+          "title": "PDE 数值方法",
+          "description": "求解复杂物理过程的数学模型"
+        },
+        "deeplearning": {
+          "title": "深度学习",
+          "description": "将数学先验与神经网络融合"
+        }
+      }
+    },
+    "partners": {
+      "title": "合作伙伴",
+      "items": {
+        "cuhk": "香港中文大学",
+        "pwh": "威尔斯亲王医院",
+        "sth": "沙田医院",
+        "gfph": "广州第一人民医院",
+        "bvt": "北京瞭望神州",
+        "shsl": "S.H. Ho 脊柱侧弯研究实验室"
+      }
+    }
+  },
+  "About": {
+    "title": "关于我们",
+    "description": "用数学的力量，开启视觉智能的新视界",
+    "mission": {
+      "title": "我们的使命",
+      "content": "几何视界是一家源自香港中文大学数学系的科技创业公司。我们致力于将几何分析与拟共形映射等数学研究成果应用于视觉AI领域，打造具有数学理论支撑的创新产品。",
+      "content2": "我们相信，数学的严谨性和优美性能够为AI技术带来新的突破。通过将深厚的数学理论与现代深度学习技术相结合，我们为客户提供更精准、更可靠的视觉智能解决方案。"
+    },
+    "values": {
+      "title": "核心价值观",
+      "description": "指引我们前行的信念",
+      "items": {
+        "innovation": "创新驱动",
+        "innovationDesc": "以数学理论为基础，探索视觉智能的新可能",
+        "precision": "精准严谨",
+        "precisionDesc": "追求数学般的精确，确保技术方案的可靠性",
+        "collaboration": "协作共赢",
+        "collaborationDesc": "与合作伙伴共同成长，创造更大的价值",
+        "excellence": "追求卓越",
+        "excellenceDesc": "不断突破技术边界，引领行业发展"
+      }
+    },
+    "timeline": {
+      "title": "发展历程",
+      "items": {
+        "2023": "公司成立，获得种子轮融资",
+        "2024_1": "推出首批视觉AI产品",
+        "2024_2": "与多家企业建立合作关系",
+        "2025": "拓展国际市场，建立全球合作伙伴网络"
+      }
+    },
+    "teamPreview": {
+      "title": "核心团队",
+      "description": "来自香港中文大学数学系及业界顶尖机构",
+      "foundingTeam": "创始团队",
+      "foundingTeamDesc": "香港中文大学数学系博士，深耕几何分析领域多年",
+      "rdTeam": "研发团队",
+      "rdTeamDesc": "数学、计算机科学交叉背景，技术实力雄厚",
+      "advisors": "顾问团队",
+      "advisorsDesc": "国际知名学者与行业专家提供战略指导",
+      "viewFullTeam": "查看完整团队"
+    }
+  },
+  "Team": {
+    "title": "核心团队",
+    "description": "源自香港中文大学数学系，用数学的力量推动视觉 AI 革新",
+    "advantages": {
+      "title": "团队优势",
+      "description": "深厚学术积累 + 产业落地经验 = 真正的创新",
+      "academic": "学术背景",
+      "academicDesc": "核心团队成员均来自 CUHK 数学系，在国际顶级期刊发表论文 50+ 篇",
+      "research": "研究实力",
+      "researchDesc": "专注于几何分析与视觉 AI 的交叉研究，拥有多项核心专利技术",
+      "recognition": "行业认可",
+      "recognitionDesc": "获得多项国际学术奖项，与全球顶尖研究机构保持紧密合作",
+      "scale": "团队规模",
+      "scaleDesc": "团队成员来自数学、计算机科学、医学等多元背景，跨学科融合创新"
+    },
+    "coreMembers": {
+      "title": "核心成员",
+      "description": "行业顶尖人才，共同探索数学与 AI 的无限可能",
+      "chenran": {
+        "name": "林陈冉",
+        "education": "博士, 香港中文大学",
+        "role": "CEO",
+        "desc": "香港中文大学博士（2024），专注拟共形映射与视觉 AI 交叉研究，主导整体战略与产品研发",
+        "expertise": "产品研发,战略规划,深度学习"
+      },
+      "lei": {
+        "name": "雷乐铭",
+        "education": "博士, 应用数学, 加州大学洛杉矶分校",
+        "role": "首席科学家",
+        "desc": "香港中文大学数学系教授，CMAI 主任，计算几何领域权威，已发表百余篇学术论文",
+        "expertise": "计算几何,数学人工智能,几何分析"
+      },
+      "li": {
+        "name": "李政",
+        "education": "博士, 中国科学院大学",
+        "role": "首席运营官",
+        "desc": "中国科学院大学博士（2014），瞭望神州联合创始人，深耕时空智能与地球科学大数据",
+        "expertise": "时空智能,地球大数据,产业运营"
+      },
+      "tan": {
+        "name": "谭星子",
+        "education": "硕士, 香港中文大学 (2018)",
+        "role": "首席财务官",
+        "desc": "香港中文大学硕士（2018），曾任职交通银行国际及星展银行，专注金融风险与行业研究",
+        "expertise": "金融风险管理,行业研究,投资分析"
+      }
+    },
+    "advisors": {
+      "title": "顾问团队",
+      "description": "国际知名学者与行业专家，为团队提供战略指导",
+      "luo": {
+        "name": "罗尚尉",
+        "affiliation": "CUHK医学院",
+        "role": "临床顾问",
+        "desc": "骨科与创伤学临床专业顾问，脊柱侧弯领域资深专家"
+      },
+      "lee": {
+        "name": "李郁伟",
+        "affiliation": "CUHK医学院",
+        "role": "临床顾问",
+        "desc": "骨科与创伤学教授，药理学博士 (2009)"
+      }
+    },
+    "cta": {
+      "title": "加入我们",
+      "description": "如果你热爱数学、热爱 AI，渴望用技术改变世界，几何视界正在寻找志同道合的伙伴，欢迎加入我们！",
+      "ctaText": "查看招聘信息",
+      "secondaryCtaText": "联系我们"
+    }
+  },
+  "Products": {
+    "title": "产品中心",
+    "description": "数学驱动的视觉AI产品，为您带来更精准、更智能的解决方案",
+    "techAdvantage": {
+      "title": "技术优势",
+      "description": "基于深厚的数学积累，我们的产品具有独特的技术优势",
+      "accuracy": "识别准确率",
+      "responseTime": "响应时间",
+      "scenarios": "应用场景",
+      "latency": "响应延迟"
+    },
+    "items": {
+      "vision": {
+        "title": "智能视觉识别",
+        "desc": "基于几何的图像识别系统，提供高精度的目标检测与识别能力",
+        "features": "几何特征提取,多尺度分析,实时处理",
+        "status": "已上线"
+      },
+      "reconstruction": {
+        "title": "3D重建引擎",
+        "desc": "采用拟共形映射技术，实现精准的三维模型重建与优化",
+        "features": "高精度重建,拓扑保持,纹理映射",
+        "status": "测试中"
+      },
+      "analytics": {
+        "title": "视觉分析平台",
+        "desc": "结合深度学习与数学建模，实现视觉数据的深度分析",
+        "features": "数据可视化,模式识别,预测分析",
+        "status": "已上线"
+      },
+      "toolkit": {
+        "title": "几何处理工具包",
+        "desc": "面向开发者的几何算法库，支持各类几何计算任务",
+        "features": "API接口,SDK支持,完整文档",
+        "status": "开发中"
+      }
+    },
+    "cta": {
+      "title": "想了解更多产品详情？",
+      "description": "我们的团队随时为您提供产品演示和技术咨询",
+      "ctaText": "联系我们"
+    }
+  },
+  "Solutions": {
+    "title": "解决方案",
+    "description": "针对不同行业需求，提供定制化的视觉AI解决方案",
+    "process": {
+      "title": "合作流程",
+      "description": "我们为您提供一站式解决方案",
+      "step1": "需求沟通",
+      "step1Desc": "深入了解业务场景与痛点",
+      "step2": "方案设计",
+      "step2Desc": "定制专属技术解决方案",
+      "step3": "开发实施",
+      "step3Desc": "敏捷开发与迭代优化",
+      "step4": "持续支持",
+      "step4Desc": "运维保障与功能升级"
+    },
+    "cta": {
+      "title": "找到适合您行业的解决方案",
+      "description": "与我们的行业专家交流，探索视觉AI如何赋能您的业务",
+      "ctaText": "咨询解决方案"
+    },
+    "items": {
+      "manufacturing": {
+        "title": "智能制造",
+        "desc": "面向制造业的质量检测、流程优化和设备监控解决方案",
+        "apps": "产品缺陷检测,精密尺寸测量,装配过程监控",
+        "benefits": "提升生产效率30%，降低缺陷率50%"
+      },
+      "healthcare": {
+        "title": "智慧医疗",
+        "desc": "基于几何的医学图像处理，辅助医生精准诊断",
+        "apps": "医学图像分析,病灶检测与定位,手术导航辅助",
+        "benefits": "提高诊断准确性，缩短诊断时间"
+      },
+      "construction": {
+        "title": "建筑测绘",
+        "desc": "三维重建与几何分析技术，赋能建筑和测绘行业",
+        "apps": "建筑三维建模,地形测绘分析,结构变形监测",
+        "benefits": "高精度建模，快速数据采集"
+      },
+      "retail": {
+        "title": "智慧零售",
+        "desc": "视觉分析技术赋能零售行业，提升运营效率和客户体验",
+        "apps": "客流分析,商品识别,智能结账",
+        "benefits": "优化门店运营，提升销售转化"
+      },
+      "transportation": {
+        "title": "智慧交通",
+        "desc": "视觉感知技术在交通领域的应用，助力智慧城市建设",
+        "apps": "车辆识别,交通流量分析,违章检测",
+        "benefits": "提升交通效率，保障出行安全"
+      },
+      "education": {
+        "title": "科研教育",
+        "desc": "先进几何计算工具与技术支撑，助力科研机构创新发展",
+        "apps": "几何算法研究,教学演示系统,学术合作项目",
+        "benefits": "加速研究进展，培养创新人才"
+      }
+    },
+    "applications": "应用场景"
+  },
+  "Contact": {
+    "title": "联系我们",
+    "contactTitle": "联系我们",
+    "description": "期待与您的交流，共同探索视觉智能的无限可能",
+    "info": {
+      "email": {
+        "title": "邮箱",
+        "content": "contact@geometryvision.online"
+      },
+      "phone": {
+        "title": "电话",
+        "content": "香港 / 深圳"
+      },
+      "address": {
+        "title": "地址",
+        "content": "香港 / 深圳"
+      }
+    },
+    "hours": {
+      "title": "工作时间",
+      "weekdays": "周一至周五: 9:00 - 18:00 (北京时间)",
+      "response": "我们会在1-2个工作日内回复您的留言"
+    },
+    "form": {
+      "formTitle": "发送消息",
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司/机构",
+      "subject": "主题",
+      "message": "留言内容",
+      "submit": "发送消息",
+      "sending": "发送中...",
+      "namePlaceholder": "您的姓名",
+      "companyPlaceholder": "您的公司或机构名称",
+      "messagePlaceholder": "请详细描述您的需求或问题...",
+      "subjectPlaceholder": "请选择咨询主题",
+      "subjects": {
+        "product": "产品咨询",
+        "solution": "解决方案",
+        "partnership": "商务合作",
+        "career": "人才招聘",
+        "other": "其他"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": "如何获取产品演示？",
+      "a1": "您可以通过上方的表单提交申请，或直接发送邮件至 contact@geometryvision.online，我们会尽快与您联系安排演示。",
+      "q2": "是否提供定制化开发服务？",
+      "a2": "是的，我们提供定制化解决方案开发服务。请详细描述您的需求，我们的技术团队会评估并为您提供方案。",
+      "q3": "如何加入几何视界团队？",
+      "a3": "我们欢迎有志于视觉AI和数学研究的人才加入。请将简历发送至 contact@geometryvision.online，注明应聘职位。"
+    }
+  },
+  "Project": {
+    "AIS": {
+      "hero": {
+        "title": "AIS脊柱侧弯智能筛查系统",
+        "description": "无辐射3D扫描 + AI智能分析，守护青少年脊柱健康"
+      },
+      "problem": "现状堪忧",
+      "problemItems": {
+        "1": "我国青少年脊柱侧弯发病率高达5-6%",
+        "2": "早期症状不明显，发现时常已错过最佳干预期",
+        "3": "传统X光检查有辐射，无法频繁筛查",
+        "4": "专业筛查资源不足，覆盖面有限"
+      },
+      "solution": "我们的方案",
+      "solutionItems": {
+        "1": "光学3D扫描，完全无辐射",
+        "2": "AI辅助分析，快速精准",
+        "3": "便携设备，可上门服务",
+        "4": "持续追踪，守护成长"
+      },
+      "features": {
+        "title": "核心功能",
+        "description": "科技赋能，让脊柱筛查更简单、更安全",
+        "scan": {
+          "title": "无辐射3D扫描",
+          "description": "采用安全的光学扫描技术，无需X射线，对青少年身体无任何辐射伤害"
+        },
+        "ai": {
+          "title": "AI智能分析",
+          "description": "基于深度学习的自动分析算法，快速准确识别脊柱侧弯风险"
+        },
+        "dual": {
+          "title": "双模式应用",
+          "description": "支持诊所专业端和家庭端，满足不同场景的筛查需求"
+        }
+      },
+      "scenarios": {
+        "title": "应用场景",
+        "clinic": {
+          "title": "诊所端",
+          "description": "专业医疗团队使用，支持批量筛查、数据管理和报告生成",
+          "users": "医院、诊所、体检中心"
+        },
+        "home": {
+          "title": "家庭端",
+          "description": "家长可自主完成初步筛查，随时监测孩子脊柱健康状况",
+          "users": "学校、家庭、健康管理机构"
+        }
+      },
+      "techAdvantage": {
+        "title": "技术优势",
+        "items": {
+          "1": "光学3D扫描，无辐射",
+          "2": "AI自动分析，5秒内出结果",
+          "3": "便携设备，上门筛查",
+          "4": "数据云端存储，追踪趋势",
+          "5": "专业报告，辅助诊断决策"
+        }
+      },
+      "partners": "合作伙伴",
+      "cta": {
+        "title": "了解详情",
+        "description": "欢迎医疗机构、体检中心及教育机构咨询合作",
+        "ctaText": "联系我们",
+        "secondaryCtaText": "查看更多产品"
+      }
+    },
+    "SmartLand": {
+      "hero": {
+        "title": "智慧国土解决方案",
+        "description": "视频图像智能分析，守护每一寸土地"
+      },
+      "problem": "监管难点",
+      "problemItems": {
+        "1": "土地面积大，人工巡查效率低",
+        "2": "违法行为隐蔽，发现不及时",
+        "3": "证据固定难，执法依据不足",
+        "4": "部门数据孤岛，协同困难"
+      },
+      "solution": "智能方案",
+      "solutionItems": {
+        "1": "24小时自动监测，无人值守",
+        "2": "AI实时分析，异常立即预警",
+        "3": "完整证据链，执法更有力",
+        "4": "数据互联，跨部门协同"
+      },
+      "features": {
+        "title": "核心功能",
+        "description": "多种技术融合，打造全方位国土智能监管体系",
+        "video": {
+          "title": "智能视频分析",
+          "description": "基于深度学习的视频图像处理技术，实现实时目标检测与追踪"
+        },
+        "farmland": {
+          "title": "耕地保护",
+          "description": "自动化监测耕地变化，及时发现占用、破坏等违法行为"
+        },
+        "building": {
+          "title": "违建检测",
+          "description": "智能识别违规建筑，辅助执法部门快速响应和处理"
+        }
+      },
+      "scenarios": {
+        "title": "应用场景",
+        "natural": {
+          "title": "自然资源监测",
+          "description": "对耕地、林地、草地等自然资源进行动态监测，及时发现占用和破坏行为",
+          "cases": "非法占用耕地监测,耕地撂荒检测,林地破坏预警"
+        },
+        "urban": {
+          "title": "城乡规划监管",
+          "description": "辅助城乡规划部门进行建设行为监管，识别未批先建、超期建设等违规行为",
+          "cases": "违建自动识别,施工进度监控,规划核实辅助"
+        },
+        "environment": {
+          "title": "环境保护巡查",
+          "description": "对自然保护区、湿地、生态红线区域进行智能监控，保护生态环境",
+          "cases": "生态破坏监测,排污口检测,垃圾分类巡查"
+        },
+        "emergency": {
+          "title": "应急响应支持",
+          "description": "在自然灾害发生时，快速评估受灾区域，辅助应急指挥决策",
+          "cases": "洪涝灾害评估,山体滑坡监测,火灾面积测算"
+        }
+      },
+      "techAdvantage": {
+        "items": {
+          "1": "多源数据融合，卫星+无人机+摄像头",
+          "2": "AI目标检测，准确率95%以上",
+          "3": "边缘计算，支持实时分析",
+          "4": "云端管理，跨区域统一调度",
+          "5": "开放API，便于系统集成"
+        }
+      },
+      "partners": "战略合作",
+      "partnerDesc": "几何视界与北京瞭望神州科技有限公司建立深度战略合作伙伴关系，结合双方在AI视觉分析和国土信息化领域的优势，共同为自然资源管理、城乡规划、环境保护等领域提供智能化解决方案。",
+      "cta": {
+        "title": "开启智慧国土新篇章",
+        "description": "欢迎政府部门、合作伙伴咨询合作，共同守护国土安全",
+        "ctaText": "联系我们",
+        "secondaryCtaText": "查看解决方案"
+      }
+    }
+  },
+  "Common": {
+    "learnMore": "了解更多",
+    "viewDetails": "查看详情",
+    "applyNow": "立即申请",
+    "contactUs": "联系我们"
+  },
+  "SEO": {
+    "title": "几何视界 GeometryVision - 用数学的力量，开启视觉智能的新视界",
+    "description": "源自香港中文大学数学系的科技创业公司，将几何分析与拟共形映射等数学研究成果应用于视觉AI领域",
+    "keywords": "视觉AI,几何分析,拟共形映射,深度学习,香港中文大学,人工智能",
+    "brand": "几何视界"
+  },
+  "NotFound": {
+    "title": "页面未找到",
+    "description": "抱歉，您访问的页面不存在。",
+    "backHome": "返回首页"
+  },
+  "Loading": {
+    "brand": "几何视界",
+    "text": "加载中..."
+  }
+}
