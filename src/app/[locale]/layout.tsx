@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans_SC } from "next/font/google";
-import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
-const notoSansSC = Noto_Sans_SC({ subsets: ["latin"] });
 
 export async function generateMetadata({ params }: { params?: Promise<{ locale: string }> }): Promise<Metadata> {
   const locale = (await params)?.locale ?? routing.defaultLocale;
@@ -70,25 +65,22 @@ export default async function LocaleLayout({
 }) {
   const locale = (await params)?.locale ?? routing.defaultLocale;
   setRequestLocale(locale);
+  const validLocale = locale as (typeof routing.locales)[number];
 
   // Ensure that a valid locale is used
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(validLocale)) {
     notFound();
   }
 
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale}>
-      <body className={`${inter.className} ${notoSansSC.className} min-h-screen flex flex-col`}>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <Header />
+      <main className="flex-1">
+        {children}
+      </main>
+      <Footer />
+    </NextIntlClientProvider>
   );
 }
