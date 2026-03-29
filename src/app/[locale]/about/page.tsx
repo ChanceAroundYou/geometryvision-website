@@ -32,14 +32,19 @@ const values = [
   },
 ];
 
-export default async function AboutPage() {
-  const t = await getTranslations();
+export default async function AboutPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   return (
     <>
-      <Hero 
-        title={t("About.title")} 
-        description={t("About.description")} 
+      <Hero
+        title={t("About.title")}
+        description={t("About.description")}
       />
 
       {/* Mission Section */}

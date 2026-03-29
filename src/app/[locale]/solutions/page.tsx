@@ -61,14 +61,19 @@ const processSteps = [
   { step: "04", titleKey: "Solutions.process.step4", descKey: "Solutions.process.step4Desc" },
 ];
 
-export default async function SolutionsPage() {
-  const t = await getTranslations();
+export default async function SolutionsPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   return (
     <>
-      <Hero 
-        title={t("Solutions.title")} 
-        description={t("Solutions.description")} 
+      <Hero
+        title={t("Solutions.title")}
+        description={t("Solutions.description")}
       />
 
       {/* Solutions Grid */}

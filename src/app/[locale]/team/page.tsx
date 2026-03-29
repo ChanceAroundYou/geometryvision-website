@@ -77,8 +77,13 @@ const researchAreas = [
   },
 ];
 
-export default async function TeamPage() {
-  const t = await getTranslations();
+export default async function TeamPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   return (
     <>

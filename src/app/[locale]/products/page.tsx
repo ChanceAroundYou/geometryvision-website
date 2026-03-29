@@ -44,14 +44,19 @@ const products = [
   },
 ];
 
-export default async function ProductsPage() {
-  const t = await getTranslations();
+export default async function ProductsPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   return (
     <>
-      <Hero 
-        title={t("Products.title")} 
-        description={t("Products.description")} 
+      <Hero
+        title={t("Products.title")}
+        description={t("Products.description")}
       />
 
       {/* Products Grid */}

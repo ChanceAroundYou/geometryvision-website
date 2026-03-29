@@ -29,8 +29,13 @@ const contactInfo = [
   },
 ];
 
-export default async function ContactPage() {
-  const t = await getTranslations();
+export default async function ContactPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   const faqs = [
     { qKey: "Contact.faq.q1", aKey: "Contact.faq.a1" },
@@ -40,9 +45,9 @@ export default async function ContactPage() {
 
   return (
     <>
-      <Hero 
-        title={t("Contact.title")} 
-        description={t("Contact.description")} 
+      <Hero
+        title={t("Contact.title")}
+        description={t("Contact.description")}
       />
 
       {/* Contact Section */}

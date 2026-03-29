@@ -209,6 +209,7 @@
       "title": "技術優勢",
       "description": "基於深厚的數學積累，我們的產品具有獨特的技術優勢",
       "accuracy": "識別準確率",
+      "latency": "低延遲",
       "responseTime": "響應時間",
       "scenarios": "應用場景"
     },
@@ -248,6 +249,8 @@
     "title": "解決方案",
     "description": "針對不同行業需求，提供定制化的視覺AI解決方案",
     "process": {
+      "title": "落地流程",
+      "description": "從需求調研到持續運維的完整交付流程",
       "step1": "需求溝通",
       "step1Desc": "深入了解業務場景與痛點",
       "step2": "方案設計",

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 export default async function Loading() {
-  const t = await getTranslations("Loading");
+  const t = await getTranslations({ locale: "zh-cn", namespace: "Loading" });
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#003366] to-[#0066FF]">

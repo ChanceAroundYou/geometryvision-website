@@ -3,9 +3,13 @@ import { getTranslations } from "next-intl/server";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-export default async function NotFound() {
-  const t = await getTranslations("NotFound");
-  const tCommon = await getTranslations("Common");
+export default async function NotFound({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale, namespace: "NotFound" });
 
   return (
     <>

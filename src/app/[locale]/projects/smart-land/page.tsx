@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProjectDetailTemplate } from "@/components/ProjectDetailTemplate";
 
 export const metadata: Metadata = {
@@ -61,8 +61,14 @@ const partners = [
   { name: "多个地方政府", role: "项目落地" },
 ];
 
-export default async function SmartLandPage() {
-  const t = await getTranslations();
+export default async function SmartLandPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale });
 
   const problemItems = [
     t("Project.SmartLand.problemItems.1"),
@@ -98,12 +104,21 @@ export default async function SmartLandPage() {
       applicationScenarios={applicationScenarios.map(s => ({
         title: t(s.titleKey),
         description: t(s.descKey),
-        cases: (t(s.casesKey) as any).split(","),
+        cases: (() => {
+          const rawCases = t.raw(s.casesKey) as unknown;
+          if (Array.isArray(rawCases)) {
+            return rawCases as string[];
+          }
+          return String(rawCases)
+            .split(",")
+            .map((item) => item.trim())
+            .filter(Boolean);
+        })(),
       }))}
       techAdvantages={techAdvantages}
       partners={partners}
       showPartnerDescription={true}
-      partnerDescription={t("Project.SmartLand.partnerDesc")}
+      partnerDescription={t("Project.SmartLand.partnerDescription")}
       ctaTitle={t("Project.SmartLand.cta.title")}
       ctaDescription={t("Project.SmartLand.cta.description")}
       ctaText={t("Project.SmartLand.cta.ctaText")}

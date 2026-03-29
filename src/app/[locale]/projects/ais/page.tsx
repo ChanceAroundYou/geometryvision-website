@@ -51,8 +51,13 @@ const partners = [
   { name: "SH Ho 实验室", role: "研究合作" },
 ];
 
-export default async function AISPage() {
-  const t = await getTranslations();
+export default async function AISPage({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   // Get problem items as array
   const problemItems = [

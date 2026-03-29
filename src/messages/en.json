@@ -250,6 +250,8 @@
     "title": "Solutions",
     "description": "Tailored visual AI solutions for different industry needs",
     "process": {
+      "title": "Implementation Process",
+      "description": "A structured path from discovery to long-term operation",
       "step1": "Requirement",
       "step1Desc": "Deep understanding of business scenarios and pain points",
       "step2": "Design",

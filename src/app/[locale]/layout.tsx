@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n";
 import { Header } from "@/components/Header";
@@ -11,10 +11,10 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 const notoSansSC = Noto_Sans_SC({ subsets: ["latin"] });
 
-export async function generateMetadata({ params }: { params: Promise<{locale: string}> }): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata({ params }: { params?: Promise<{ locale: string }> }): Promise<Metadata> {
+  const locale = (await params)?.locale ?? routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: 'SEO' });
-  
+
   return {
     title: {
       default: t('title'),
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{locale: st
 }
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -66,16 +66,17 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params?: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
-  
+  const locale = (await params)?.locale ?? routing.defaultLocale;
+  setRequestLocale(locale);
+
   // Ensure that a valid locale is used
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>

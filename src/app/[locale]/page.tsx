@@ -7,8 +7,13 @@ import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { PartnersSection } from "@/components/PartnersSection";
 import { CTASection } from "@/components/ui";
 
-export default async function Home() {
-  const t = await getTranslations();
+export default async function Home({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}) {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
 
   return (
     <>
