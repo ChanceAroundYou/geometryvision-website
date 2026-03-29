@@ -5,13 +5,8 @@ import type { NextConfig } from "next";
 const withNextIntl = createNextIntlPlugin('./src/i18n-request.ts');
 
 const nextConfig: NextConfig = {
-  output: "export",
   allowedDevOrigins: [
-    "192.168.1.6",
-    "localhost",
-    "home.xiaokubao.space",
-    "www.geometryvision.com",
-    "geometryvision.com"
+    "**.*",
   ],
   // 移除 X-Powered-By 头部
   poweredByHeader: false,
@@ -29,3 +24,5 @@ const nextConfig: NextConfig = {
 };
 
 export default withNextIntl(nextConfig);
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());

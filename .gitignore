@@ -42,3 +42,7 @@ yarn-error.log*
 .dev.vars
 next-env.d.ts
 .next
+
+# OpenNext
+.wrangler
+.open-next
