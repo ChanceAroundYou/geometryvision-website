@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain, Heart, MapPin } from "lucide-react";
+import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { Section, SectionHeader, Card, CTASection, IconBadge } from "@/components/ui";
+import { ProjectCard } from "@/components/ProjectCard";
 
 export const metadata: Metadata = {
   title: "Solutions - GeometryVision",
@@ -54,23 +55,6 @@ const solutions = [
   },
 ];
 
-const coreBusinessItems = [
-  {
-    icon: Heart,
-    titleKey: "Solutions.coreBusiness.aiMedical.title",
-    descKey: "Solutions.coreBusiness.aiMedical.desc",
-    featuresKey: "Solutions.coreBusiness.aiMedical.features.items",
-    href: "/projects/ais",
-  },
-  {
-    icon: MapPin,
-    titleKey: "Solutions.coreBusiness.smartLand.title",
-    descKey: "Solutions.coreBusiness.smartLand.desc",
-    featuresKey: "Solutions.coreBusiness.smartLand.features.items",
-    href: "/projects/smart-land",
-  },
-];
-
 const advantages = [
   {
     key: "academic",
@@ -107,9 +91,28 @@ export default async function SolutionsPage({
 }) {
   const locale = (await params)?.locale ?? "zh-cn";
   const t = await getTranslations({ locale });
+  const tCommon = await getTranslations({ locale: locale, namespace: "Common" });
 
   // 辅助函数：获取带 locale 前缀的路径
   const getLocalizedHref = (path: string) => `/${locale}${path}`;
+
+  // 核心业务数据 - 使用 ProjectCard 展示
+  const coreBusinessProjects = [
+    {
+      title: t("Solutions.coreBusiness.aiMedical.title"),
+      description: t("Solutions.coreBusiness.aiMedical.description"),
+      icon: "🏥",
+      href: getLocalizedHref("/projects/ais"),
+      backgroundColor: "#0066FF", // 蓝色
+    },
+    {
+      title: t("Solutions.coreBusiness.smartLand.title"),
+      description: t("Solutions.coreBusiness.smartLand.description"),
+      icon: "🌍",
+      href: getLocalizedHref("/projects/smart-land"),
+      backgroundColor: "#10B981", // 绿色
+    },
+  ];
 
   return (
     <>
@@ -118,7 +121,7 @@ export default async function SolutionsPage({
         description={t("Solutions.description")}
       />
 
-      {/* Core Business Section */}
+      {/* Core Business Section - 使用 ProjectCard 展示 */}
       <Section background="gray">
         <SectionHeader
           title={t("Solutions.coreBusiness.title")}
@@ -126,29 +129,16 @@ export default async function SolutionsPage({
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {coreBusinessItems.map((item, index) => (
-            <Link key={index} href={getLocalizedHref(item.href)}>
-              <Card bordered hover className="h-full">
-                <IconBadge icon={item.icon} />
-                <h3 className="text-xl font-semibold text-[#003366] mb-2">
-                  {t(item.titleKey)}
-                </h3>
-                <p className="text-gray-600 mb-4">{t(item.descKey)}</p>
-                <div className="pt-4 border-t border-gray-100">
-                  <h4 className="text-sm font-medium text-gray-700 mb-2">
-                    {t("Solutions.coreBusiness.aiMedical.features.title")}
-                  </h4>
-                  <ul className="space-y-1">
-                    {(t(item.featuresKey) as any).split(",").map((feature: string, idx: number) => (
-                      <li key={idx} className="text-sm text-gray-600 flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#0066FF]"></span>
-                        {feature.trim()}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Card>
-            </Link>
+          {coreBusinessProjects.map((project) => (
+            <ProjectCard
+              key={project.href}
+              title={project.title}
+              description={project.description}
+              icon={project.icon}
+              href={project.href}
+              learnMore={tCommon("learnMore")}
+              backgroundColor={project.backgroundColor}
+            />
           ))}
         </div>
       </Section>

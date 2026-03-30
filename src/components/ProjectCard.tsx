@@ -7,13 +7,15 @@ interface ProjectCardProps {
   icon: string;
   href: string;
   learnMore: string;
+  backgroundColor?: string;
 }
 
-export function ProjectCard({ title, description, icon, href, learnMore }: ProjectCardProps) {
+export function ProjectCard({ title, description, icon, href, learnMore, backgroundColor }: ProjectCardProps) {
   return (
     <Link
       href={href}
-      className="group block p-6 bg-white rounded-xl border border-gray-200 hover:border-[#0066FF] hover:shadow-lg transition-all"
+      className="group block p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all"
+      style={{ backgroundColor: backgroundColor || '#ffffff' }}
     >
       <div className="text-4xl mb-4">{icon}</div>
       <h3 className="text-xl font-semibold text-[#003366] mb-2 group-hover:text-[#0066FF] transition-colors">
