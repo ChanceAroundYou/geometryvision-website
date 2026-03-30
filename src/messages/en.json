@@ -249,6 +249,72 @@
   "Solutions": {
     "title": "Solutions",
     "description": "Tailored visual AI solutions for different industry needs",
+    "coreBusiness": {
+      "title": "Core Business",
+      "description": "Applying mathematical research to solve real-world problems across different domains",
+      "aiMedical": {
+        "title": "AI Medical Imaging Analysis",
+        "description": "AIS Scoliosis Intelligent Screening System - Radiation-free 3D scanning + AI analysis, clinic and home dual-mode",
+        "features": {
+          "title": "Key Features",
+          "items": "Radiation-free 3D scanning, AI-powered analysis, Dual-mode (clinic & home), Accurate screening"
+        }
+      },
+      "smartLand": {
+        "title": "Smart Land & Real Estate",
+        "description": "Deep partnership with Beijing ViewTech - Video image intelligent analysis, farmland protection, illegal construction detection and more",
+        "features": {
+          "title": "Applications",
+          "items": "Farmland protection, Illegal construction detection, Smart monitoring, Data analysis"
+        }
+      }
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "items": {
+        "academic": {
+          "title": "Strong Academic Background",
+          "description": "Core team from CUHK Department of Mathematics"
+        },
+        "crossdisciplinary": {
+          "title": "Cross-disciplinary Integration",
+          "description": "Mathematics + Medicine + AI"
+        },
+        "clinical": {
+          "title": "Clinical Validation",
+          "description": "Partnership with Prince of Wales Hospital and other institutions"
+        },
+        "industry": {
+          "title": "Industry Implementation",
+          "description": "Deployed real-world projects"
+        }
+      }
+    },
+    "tech": {
+      "title": "Core Technologies",
+      "description": "Building leading visual AI technology based on deep mathematical foundations",
+      "geometric": {
+        "title": "Geometric Deep Learning",
+        "description": "Innovative application of geometric deep learning in visual understanding"
+      },
+      "conformal": {
+        "title": "Quasiconformal Mapping",
+        "description": "Mathematical theory for high-precision image registration"
+      },
+      "pde": {
+        "title": "PDE Solving",
+        "description": "Numerical methods for partial differential equations in image reconstruction"
+      },
+      "deeplearning": {
+        "title": "Deep Learning Optimization",
+        "description": "Specialized neural network architectures for medical imaging"
+      }
+    },
+    "industrySolutions": {
+      "title": "Industry Solutions",
+      "description": "Tailored solutions for different industries"
+    },
+    "applications": "Applications",
     "process": {
       "title": "Implementation Process",
       "description": "A structured path from discovery to long-term operation",
@@ -529,7 +595,16 @@
     "title": "GeometryVision - Unlocking New Visions of Visual Intelligence Through Mathematics",
     "description": "A tech startup from the Department of Mathematics at CUHK, applying geometric analysis and quasi-conformal mapping to visual AI",
     "keywords": "visual AI,geometric analysis,quasi-conformal mapping,deep learning,CUHK,artificial intelligence",
-    "brand": "GeometryVision"
+    "brand": "GeometryVision",
+    "titleHome": "Home",
+    "titleAbout": "About",
+    "titleTeam": "Team",
+    "titleProducts": "Products",
+    "titleSolutions": "Solutions",
+    "titleContact": "Contact",
+    "titleProjects": "Projects",
+    "titleAIS": "AIS - Smart Scoliosis Screening",
+    "titleSmartLand": "Smart Land"
   },
   "NotFound": {
     "title": "Page Not Found",

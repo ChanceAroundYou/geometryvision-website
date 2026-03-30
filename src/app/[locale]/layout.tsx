@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -10,11 +11,39 @@ export async function generateMetadata({ params }: { params?: Promise<{ locale: 
   const locale = (await params)?.locale ?? routing.defaultLocale;
   const t = await getTranslations({ locale, namespace: 'SEO' });
 
+  // Get current pathname from headers
+  const headersList = await headers();
+  const pathname = headersList.get('x-next-pathname') || '';
+
+  // 英文品牌名常量
+  const brandEN = 'GeometryVision';
+  
+  // 根据语言获取品牌名
+  const getBrand = () => locale === 'en' ? brandEN : t('brand');
+  
+  // 判断是否是首页
+  const isHome = pathname === '' || pathname === '/';
+
+  // Map pathname to page title translation key
+  const pageTitles: Record<string, string> = {
+    '': t('titleHome'),
+    'about': t('titleAbout'),
+    'team': t('titleTeam'),
+    'products': t('titleProducts'),
+    'solutions': t('titleSolutions'),
+    'contact': t('titleContact'),
+    'projects': t('titleProjects'),
+    'projects/ais': t('titleAIS'),
+    'projects/smart-land': t('titleSmartLand'),
+  };
+
+  const pageTitle = pageTitles[pathname] || t('titleHome');
+  
+  // 首页特殊处理：中文=几何视界，英文=GeometryVision
+  const title = isHome ? getBrand() : `${pageTitle} - ${getBrand()}`;
+
   return {
-    title: {
-      default: t('title'),
-      template: `%s | ${t('brand')}`,
-    },
+    title: title,
     description: t('description'),
     keywords: t('keywords').split(',').map(k => k.trim()),
     icons: {

@@ -18,12 +18,9 @@ export function Footer() {
   };
 
   const getLocalizedPath = (targetLocale: string, path: string = "/") => {
-    // Handle root path
-    if (path === "/") {
-      return targetLocale === "zh-cn" ? "/" : `/${targetLocale}`;
-    }
+    // 统一添加 locale 前缀，与 Header 保持一致
     const pathWithoutLocale = getPathWithoutLocale(path);
-    return targetLocale === "zh-cn" ? pathWithoutLocale : `/${targetLocale}${pathWithoutLocale}`;
+    return `/${targetLocale}${pathWithoutLocale}`;
   };
 
   // 根据当前语言获取对应的文案

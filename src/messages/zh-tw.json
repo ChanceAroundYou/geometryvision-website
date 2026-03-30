@@ -248,6 +248,72 @@
   "Solutions": {
     "title": "解決方案",
     "description": "針對不同行業需求，提供定制化的視覺AI解決方案",
+    "coreBusiness": {
+      "title": "核心業務",
+      "description": "將數學研究成果應用於不同領域，解決實際問題",
+      "aiMedical": {
+        "title": "AI 醫學影像分析",
+        "description": "AIS脊柱側彎智慧篩查系統，無輻射3D掃描+AI分析，診所端+家庭端雙模式",
+        "features": {
+          "title": "核心功能",
+          "items": "無輻射3D掃描,AI智慧分析,診所+家庭雙模式,精準篩查"
+        }
+      },
+      "smartLand": {
+        "title": "智慧地產/國土",
+        "description": "與北京瞭望神州深度合作，視頻圖像智慧分析，耕地保護、違建檢測等應用場景",
+        "features": {
+          "title": "應用場景",
+          "items": "耕地保護,違建檢測,智慧監控,數據分析"
+        }
+      }
+    },
+    "advantages": {
+      "title": "技術優勢",
+      "items": {
+        "academic": {
+          "title": "學術背景深厚",
+          "description": "核心團隊來自 CUHK 數學系"
+        },
+        "crossdisciplinary": {
+          "title": "跨學科融合",
+          "description": "數學 + 醫學 + AI"
+        },
+        "clinical": {
+          "title": "臨床驗證",
+          "description": "與威爾斯親王醫院等機構合作"
+        },
+        "industry": {
+          "title": "產業落地",
+          "description": "已實現項目落地應用"
+        }
+      }
+    },
+    "tech": {
+      "title": "核心技術",
+      "description": "基於深厚的數學積累，打造領先的視覺 AI 技術",
+      "geometric": {
+        "title": "幾何深度學習",
+        "description": "創新性將幾何深度學習應用於視覺理解"
+      },
+      "conformal": {
+        "title": "擬共形映射",
+        "description": "利用數學理論實現高精度圖像配準"
+      },
+      "pde": {
+        "title": "PDE 求解",
+        "description": "偏微分方程數值方法實現圖像重建"
+      },
+      "deeplearning": {
+        "title": "深度學習優化",
+        "description": "針對醫學影像的專用神經網絡架構"
+      }
+    },
+    "industrySolutions": {
+      "title": "行業解決方案",
+      "description": "針對不同行業的定製化解決方案"
+    },
+    "applications": "應用場景",
     "process": {
       "title": "落地流程",
       "description": "從需求調研到持續運維的完整交付流程",
@@ -528,7 +594,16 @@
     "title": "幾何視界 GeometryVision - 用數學的力量，開啟視覺智能的新視界",
     "description": "源自香港中文大學數學系的科技創業公司，將幾何分析與擬共形映射等數學研究成果應用於視覺AI領域",
     "keywords": "視覺AI,幾何分析,擬共形映射,深度學習,香港中文大學,人工智能",
-    "brand": "幾何視界"
+    "brand": "幾何視界",
+    "titleHome": "首頁",
+    "titleAbout": "關於",
+    "titleTeam": "團隊",
+    "titleProducts": "產品",
+    "titleSolutions": "解決方案",
+    "titleContact": "聯繫",
+    "titleProjects": "項目",
+    "titleAIS": "AIS - 智能脊柱側彎篩查",
+    "titleSmartLand": "智慧土地"
   },
   "NotFound": {
     "title": "頁面未找到",

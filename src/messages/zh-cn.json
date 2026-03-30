@@ -248,6 +248,71 @@
   "Solutions": {
     "title": "解决方案",
     "description": "针对不同行业需求，提供定制化的视觉AI解决方案",
+    "coreBusiness": {
+      "title": "核心业务",
+      "description": "将数学研究成果应用于不同领域，解决实际问题",
+      "aiMedical": {
+        "title": "AI 医学影像分析",
+        "description": "AIS脊柱侧弯智能筛查系统，无辐射3D扫描+AI分析，诊所端+家庭端双模式",
+        "features": {
+          "title": "核心功能",
+          "items": "无辐射3D扫描,AI智能分析,诊所+家庭双模式,精准筛查"
+        }
+      },
+      "smartLand": {
+        "title": "智慧地产/国土",
+        "description": "与北京瞭望神州深度合作，视频图像智能分析，耕地保护、违建检测等应用场景",
+        "features": {
+          "title": "应用场景",
+          "items": "耕地保护,违建检测,智能监控,数据分析"
+        }
+      }
+    },
+    "advantages": {
+      "title": "技术优势",
+      "items": {
+        "academic": {
+          "title": "学术背景深厚",
+          "description": "核心团队来自 CUHK 数学系"
+        },
+        "crossdisciplinary": {
+          "title": "跨学科融合",
+          "description": "数学 + 医学 + AI"
+        },
+        "clinical": {
+          "title": "临床验证",
+          "description": "与威尔斯亲王医院等机构合作"
+        },
+        "industry": {
+          "title": "产业落地",
+          "description": "已实现项目落地应用"
+        }
+      }
+    },
+    "tech": {
+      "title": "核心技术",
+      "description": "基于深厚的数学积累，打造领先的视觉 AI 技术",
+      "geometric": {
+        "title": "几何深度学习",
+        "description": "创新性将几何深度学习应用于视觉理解"
+      },
+      "conformal": {
+        "title": "拟共形映射",
+        "description": "利用数学理论实现高精度图像配准"
+      },
+      "pde": {
+        "title": "PDE 求解",
+        "description": "偏微分方程数值方法实现图像重建"
+      },
+      "deeplearning": {
+        "title": "深度学习优化",
+        "description": "针对医学影像的专用神经网络架构"
+      }
+    },
+    "industrySolutions": {
+      "title": "行业解决方案",
+      "description": "针对不同行业的定制化解决方案"
+    },
     "process": {
       "title": "合作流程",
       "description": "我们为您提供一站式解决方案",
@@ -303,13 +368,30 @@
         "benefits": "加速研究进展，培养创新人才"
       }
     },
-    "applications": "应用场景"
+    "industrySolutions": {
+      "title": "行业解决方案",
+      "description": "针对不同行业的定制化解决方案"
+    },
+    "applications": "应用场景",
+    "process": {
+      "title": "合作流程",
+      "description": "我们为您提供一站式解决方案",
+      "step1": "需求沟通",
+      "step1Desc": "深入了解业务场景与痛点",
+      "step2": "方案设计",
+      "step2Desc": "定制专属技术解决方案",
+      "step3": "开发实施",
+      "step3Desc": "敏捷开发与迭代优化",
+      "step4": "持续支持",
+      "step4Desc": "运维保障与功能升级"
+    },
+    "cta": {
+      "title": "找到适合您行业的解决方案",
+      "description": "与我们的行业专家交流，探索视觉AI如何赋能您的业务",
+      "ctaText": "咨询解决方案"
+    }
   },
   "Contact": {
-    "title": "联系我们",
-    "contactTitle": "联系我们",
-    "description": "期待与您的交流，共同探索视觉智能的无限可能",
-    "info": {
       "email": {
         "title": "邮箱",
         "content": "contact@geometryvision.online"
@@ -514,7 +596,16 @@
     "title": "几何视界 GeometryVision - 用数学的力量，开启视觉智能的新视界",
     "description": "源自香港中文大学数学系的科技创业公司，将几何分析与拟共形映射等数学研究成果应用于视觉AI领域",
     "keywords": "视觉AI,几何分析,拟共形映射,深度学习,香港中文大学,人工智能",
-    "brand": "几何视界"
+    "brand": "几何视界",
+    "titleHome": "首页",
+    "titleAbout": "关于",
+    "titleTeam": "团队",
+    "titleProducts": "产品",
+    "titleSolutions": "解决方案",
+    "titleContact": "联系",
+    "titleProjects": "项目",
+    "titleAIS": "AIS - 智能脊柱侧弯筛查",
+    "titleSmartLand": "智慧土地"
   },
   "NotFound": {
     "title": "页面未找到",

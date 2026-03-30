@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu } from "lucide-react";
+import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain, Heart, MapPin } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { Section, SectionHeader, Card, CTASection, IconBadge } from "@/components/ui";
 
@@ -54,6 +54,45 @@ const solutions = [
   },
 ];
 
+const coreBusinessItems = [
+  {
+    icon: Heart,
+    titleKey: "Solutions.coreBusiness.aiMedical.title",
+    descKey: "Solutions.coreBusiness.aiMedical.desc",
+    featuresKey: "Solutions.coreBusiness.aiMedical.features.items",
+    href: "/projects/ais",
+  },
+  {
+    icon: MapPin,
+    titleKey: "Solutions.coreBusiness.smartLand.title",
+    descKey: "Solutions.coreBusiness.smartLand.desc",
+    featuresKey: "Solutions.coreBusiness.smartLand.features.items",
+    href: "/projects/smart-land",
+  },
+];
+
+const advantages = [
+  {
+    key: "academic",
+  },
+  {
+    key: "crossdisciplinary",
+  },
+  {
+    key: "clinical",
+  },
+  {
+    key: "industry",
+  },
+];
+
+const technologies = [
+  { icon: TrendingUp, key: "geometric" },
+  { icon: Shield, key: "conformal" },
+  { icon: Brain, key: "pde" },
+  { icon: Cpu, key: "deeplearning" },
+];
+
 const processSteps = [
   { step: "01", titleKey: "Solutions.process.step1", descKey: "Solutions.process.step1Desc" },
   { step: "02", titleKey: "Solutions.process.step2", descKey: "Solutions.process.step2Desc" },
@@ -79,8 +118,96 @@ export default async function SolutionsPage({
         description={t("Solutions.description")}
       />
 
-      {/* Solutions Grid */}
+      {/* Core Business Section */}
+      <Section background="gray">
+        <SectionHeader
+          title={t("Solutions.coreBusiness.title")}
+          description={t("Solutions.coreBusiness.description")}
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {coreBusinessItems.map((item, index) => (
+            <Link key={index} href={getLocalizedHref(item.href)}>
+              <Card bordered hover className="h-full">
+                <IconBadge icon={item.icon} />
+                <h3 className="text-xl font-semibold text-[#003366] mb-2">
+                  {t(item.titleKey)}
+                </h3>
+                <p className="text-gray-600 mb-4">{t(item.descKey)}</p>
+                <div className="pt-4 border-t border-gray-100">
+                  <h4 className="text-sm font-medium text-gray-700 mb-2">
+                    {t("Solutions.coreBusiness.aiMedical.features.title")}
+                  </h4>
+                  <ul className="space-y-1">
+                    {(t(item.featuresKey) as any).split(",").map((feature: string, idx: number) => (
+                      <li key={idx} className="text-sm text-gray-600 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0066FF]"></span>
+                        {feature.trim()}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      {/* Advantages Section */}
       <Section background="white">
+        <SectionHeader title={t("Solutions.advantages.title")} />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {advantages.map((advantage, index) => (
+            <Card key={index} hover className="text-center">
+              <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#0066FF] to-[#00CCFF] flex items-center justify-center">
+                <span className="text-white font-bold">{index + 1}</span>
+              </div>
+              <h3 className="text-lg font-semibold text-[#003366] mb-2">
+                {t(`Solutions.advantages.items.${advantage.key}.title`)}
+              </h3>
+              <p className="text-gray-600 text-sm">
+                {t(`Solutions.advantages.items.${advantage.key}.description`)}
+              </p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Technologies Section */}
+      <Section background="gray">
+        <SectionHeader
+          title={t("Solutions.tech.title")}
+          description={t("Solutions.tech.description")}
+        />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {technologies.map((tech, index) => (
+            <div
+              key={index}
+              className="text-center p-6 bg-white rounded-lg hover:shadow-md transition-shadow"
+            >
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0066FF] to-[#00CCFF] mb-4">
+                <tech.icon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-[#003366] mb-2">
+                {t(`Solutions.tech.${tech.key}.title`)}
+              </h3>
+              <p className="text-gray-600 text-sm">
+                {t(`Solutions.tech.${tech.key}.description`)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Industry Solutions Grid */}
+      <Section background="white">
+        <SectionHeader
+          title={t("Solutions.industrySolutions.title")}
+          description={t("Solutions.industrySolutions.description")}
+        />
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
             <Card key={index} bordered hover>
