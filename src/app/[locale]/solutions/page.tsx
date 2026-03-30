@@ -94,7 +94,7 @@ export default async function SolutionsPage({
       />
 
       {/* Advantages Section */}
-      <Section background="gray">
+      <Section background="white">
         <SectionHeader title={t("Solutions.advantages.title")} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -115,7 +115,7 @@ export default async function SolutionsPage({
       </Section>
 
       {/* Technologies Section */}
-      <Section background="white">
+      <Section background="gray">
         <SectionHeader
           title={t("Solutions.tech.title")}
           description={t("Solutions.tech.description")}
@@ -142,10 +142,10 @@ export default async function SolutionsPage({
       </Section>
 
       {/* Core Business Section - ProjectsSection */}
-      <ProjectsSection locale={locale} background="gray" />
+      <ProjectsSection locale={locale} background="white" />
 
       {/* Industry Solutions Grid */}
-      <Section background="white">
+      <Section background="gray">
         <SectionHeader
           title={t("Solutions.industrySolutions.title")}
           description={t("Solutions.industrySolutions.description")}
@@ -180,7 +180,7 @@ export default async function SolutionsPage({
       </Section>
 
       {/* Process Section */}
-      <Section background="gray">
+      <Section background="white">
         <SectionHeader
           title={t("Solutions.process.title")}
           description={t("Solutions.process.description")}
