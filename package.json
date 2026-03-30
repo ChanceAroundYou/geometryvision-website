@@ -5,6 +5,8 @@
   "scripts": {
     "build": "next build",
     "test": "next dev -p 4718 -H 0.0.0.0 --webpack",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
     "dev": "next dev -p 4717 -H 0.0.0.0 --webpack",
     "start": "next start -p 4717 -H 0.0.0.0",
     "lint": "eslint",
@@ -26,6 +28,7 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

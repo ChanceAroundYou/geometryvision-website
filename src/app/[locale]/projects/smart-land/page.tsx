@@ -70,6 +70,9 @@ export default async function SmartLandPage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
 
+  // 辅助函数：获取带 locale 前缀的路径
+  const getLocalizedHref = (path: string) => `/${locale}${path}`;
+
   const problemItems = [
     t("Project.SmartLand.problemItems.1"),
     t("Project.SmartLand.problemItems.2"),
@@ -122,9 +125,9 @@ export default async function SmartLandPage({
       ctaTitle={t("Project.SmartLand.cta.title")}
       ctaDescription={t("Project.SmartLand.cta.description")}
       ctaText={t("Project.SmartLand.cta.ctaText")}
-      ctaHref="/contact"
+      ctaHref={getLocalizedHref("/contact")}
       secondaryCtaText={t("Project.SmartLand.cta.secondaryCtaText")}
-      secondaryCtaHref="/solutions"
+      secondaryCtaHref={getLocalizedHref("/solutions")}
     />
   );
 }

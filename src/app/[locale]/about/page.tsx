@@ -40,6 +40,9 @@ export default async function AboutPage({
   const locale = (await params)?.locale ?? "zh-cn";
   const t = await getTranslations({ locale });
 
+  // 辅助函数：获取带 locale 前缀的路径
+  const getLocalizedHref = (path: string) => `/${locale}${path}`;
+
   return (
     <>
       <Hero
@@ -130,7 +133,7 @@ export default async function AboutPage({
         </div>
 
         <div className="text-center mt-8">
-          <Button href="/team" variant="ghost">
+          <Button href={getLocalizedHref("/team")} variant="ghost">
             {t("About.teamPreview.viewFullTeam")} <ArrowRight className="w-4 h-4 ml-1" />
           </Button>
         </div>

@@ -59,6 +59,9 @@ export default async function AISPage({
   const locale = (await params)?.locale ?? "zh-cn";
   const t = await getTranslations({ locale });
 
+  // 辅助函数：获取带 locale 前缀的路径
+  const getLocalizedHref = (path: string) => `/${locale}${path}`;
+
   // Get problem items as array
   const problemItems = [
     t("Project.AIS.problemItems.1"),
@@ -102,9 +105,9 @@ export default async function AISPage({
       ctaTitle={t("Project.AIS.cta.title")}
       ctaDescription={t("Project.AIS.cta.description")}
       ctaText={t("Project.AIS.cta.ctaText")}
-      ctaHref="/contact"
+      ctaHref={getLocalizedHref("/contact")}
       secondaryCtaText={t("Project.AIS.cta.secondaryCtaText")}
-      secondaryCtaHref="/products"
+      secondaryCtaHref={getLocalizedHref("/products")}
     />
   );
 }

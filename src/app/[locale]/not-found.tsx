@@ -11,6 +11,9 @@ export default async function NotFound({
   const locale = (await params)?.locale ?? "zh-cn";
   const t = await getTranslations({ locale, namespace: "NotFound" });
 
+  // 辅助函数：获取带 locale 前缀的路径
+  const getLocalizedHref = (path: string) => `/${locale}${path}`;
+
   return (
     <>
       <Header />
@@ -20,7 +23,7 @@ export default async function NotFound({
           <h2 className="text-2xl font-semibold mb-4">{t("title")}</h2>
           <p className="text-gray-200 mb-8">{t("description")}</p>
           <Link
-            href="/"
+            href={getLocalizedHref("/")}
             className="inline-flex items-center justify-center px-6 py-3 bg-[#00CCFF] text-white font-medium rounded-lg hover:bg-[#00BBFF] transition-colors"
           >
             {t("backHome")}

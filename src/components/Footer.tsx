@@ -109,11 +109,11 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t.quickLinks}</h4>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">{t.about}</Link></li>
-              <li><Link href="/team" className="text-gray-300 hover:text-white transition-colors">{t.team}</Link></li>
-              <li><Link href="/products" className="text-gray-300 hover:text-white transition-colors">{t.products}</Link></li>
-              <li><Link href="/solutions" className="text-gray-300 hover:text-white transition-colors">{t.solutions}</Link></li>
-              <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">{t.contact}</Link></li>
+              <li><Link href={getLocalizedPath(locale, "/about")} className="text-gray-300 hover:text-white transition-colors">{t.about}</Link></li>
+              <li><Link href={getLocalizedPath(locale, "/team")} className="text-gray-300 hover:text-white transition-colors">{t.team}</Link></li>
+              <li><Link href={getLocalizedPath(locale, "/products")} className="text-gray-300 hover:text-white transition-colors">{t.products}</Link></li>
+              <li><Link href={getLocalizedPath(locale, "/solutions")} className="text-gray-300 hover:text-white transition-colors">{t.solutions}</Link></li>
+              <li><Link href={getLocalizedPath(locale, "/contact")} className="text-gray-300 hover:text-white transition-colors">{t.contact}</Link></li>
             </ul>
           </div>
 

@@ -7,6 +7,11 @@ import { AdvantagesSection } from "@/components/AdvantagesSection";
 import { PartnersSection } from "@/components/PartnersSection";
 import { CTASection } from "@/components/ui";
 
+// 辅助函数：获取带 locale 前缀的路径
+const getLocalizedHref = (locale: string, path: string) => {
+  return `/${locale}${path}`;
+};
+
 export default async function Home({
   params,
 }: {
@@ -24,13 +29,13 @@ export default async function Home({
         actions={
           <>
             <Link
-              href="/products"
+              href={getLocalizedHref(locale, "/products")}
               className="inline-flex items-center justify-center px-6 py-3 bg-[#00CCFF] text-white font-medium rounded-lg hover:bg-[#00BBFF] transition-colors"
             >
               {t("Home.hero.viewProducts")}
             </Link>
             <Link
-              href="/contact"
+              href={getLocalizedHref(locale, "/contact")}
               className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#003366] font-medium rounded-lg hover:bg-gray-100 transition-colors"
             >
               {t("Home.hero.contactUs")}
@@ -39,7 +44,7 @@ export default async function Home({
         }
       />
       <TechSection />
-      <ProjectsSection />
+      <ProjectsSection locale={locale} />
       <AdvantagesSection />
       <PartnersSection />
 

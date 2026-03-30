@@ -1,8 +1,18 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
 import { Section, SectionHeader } from "@/components/ui";
 
-export function ProjectsSection() {
+// 辅助函数：获取带 locale 前缀的路径
+const getLocalizedHref = (locale: string, path: string) => {
+  return `/${locale}${path}`;
+};
+
+interface ProjectsSectionProps {
+  locale: string;
+}
+
+export function ProjectsSection({ locale }: ProjectsSectionProps) {
   const t = useTranslations("Home.projects");
   const tCommon = useTranslations("Common");
 
@@ -11,13 +21,13 @@ export function ProjectsSection() {
       title: t("items.ais.title"),
       description: t("items.ais.description"),
       icon: "🏥",
-      href: "/projects/ais",
+      href: getLocalizedHref(locale, "/projects/ais"),
     },
     {
       title: t("items.smartland.title"),
       description: t("items.smartland.description"),
       icon: "🌍",
-      href: "/projects/smart-land",
+      href: getLocalizedHref(locale, "/projects/smart-land"),
     },
   ];
 

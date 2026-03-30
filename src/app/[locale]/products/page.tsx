@@ -52,6 +52,9 @@ export default async function ProductsPage({
   const locale = (await params)?.locale ?? "zh-cn";
   const t = await getTranslations({ locale });
 
+  // 辅助函数：获取带 locale 前缀的路径
+  const getLocalizedHref = (path: string) => `/${locale}${path}`;
+
   return (
     <>
       <Hero
@@ -115,7 +118,7 @@ export default async function ProductsPage({
         title={t("Products.cta.title")}
         description={t("Products.cta.description")}
         ctaText={t("Products.cta.ctaText")}
-        ctaHref="/contact"
+        ctaHref={getLocalizedHref("/contact")}
       />
     </>
   );
