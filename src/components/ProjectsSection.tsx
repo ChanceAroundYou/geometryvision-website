@@ -10,9 +10,10 @@ const getLocalizedHref = (locale: string, path: string) => {
 
 interface ProjectsSectionProps {
   locale: string;
+  background?: "white" | "gray";
 }
 
-export function ProjectsSection({ locale }: ProjectsSectionProps) {
+export function ProjectsSection({ locale, background = "gray" }: ProjectsSectionProps) {
   const t = useTranslations("Home.projects");
   const tCommon = useTranslations("Common");
 
@@ -32,7 +33,7 @@ export function ProjectsSection({ locale }: ProjectsSectionProps) {
   ];
 
   return (
-    <Section background="gray">
+    <Section background={background}>
       <SectionHeader title={t("title")} description={t("description")} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">

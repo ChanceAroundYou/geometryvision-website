@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain } from "lucide-react";
+import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain, Heart, MapPin } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { Section, SectionHeader, Card, CTASection, IconBadge } from "@/components/ui";
-import { ProjectCard } from "@/components/ProjectCard";
 
 export const metadata: Metadata = {
   title: "Solutions - GeometryVision",
@@ -55,19 +54,26 @@ const solutions = [
   },
 ];
 
+const coreBusinessItems = [
+  {
+    icon: Heart,
+    title: "AI 医学影像",
+    description: "AIS脊柱侧弯智能筛查，无辐射3D扫描+AI分析",
+    href: "/projects/ais",
+  },
+  {
+    icon: MapPin,
+    title: "智慧地产/国土",
+    description: "与北京瞭望神州深度合作，视频图像智能分析",
+    href: "/projects/smart-land",
+  },
+];
+
 const advantages = [
-  {
-    key: "academic",
-  },
-  {
-    key: "crossdisciplinary",
-  },
-  {
-    key: "clinical",
-  },
-  {
-    key: "industry",
-  },
+  { key: "academic" },
+  { key: "crossdisciplinary" },
+  { key: "clinical" },
+  { key: "industry" },
 ];
 
 const technologies = [
@@ -91,28 +97,9 @@ export default async function SolutionsPage({
 }) {
   const locale = (await params)?.locale ?? "zh-cn";
   const t = await getTranslations({ locale });
-  const tCommon = await getTranslations({ locale: locale, namespace: "Common" });
 
   // 辅助函数：获取带 locale 前缀的路径
   const getLocalizedHref = (path: string) => `/${locale}${path}`;
-
-  // 核心业务数据 - 使用 ProjectCard 展示
-  const coreBusinessProjects = [
-    {
-      title: t("Solutions.coreBusiness.aiMedical.title"),
-      description: t("Solutions.coreBusiness.aiMedical.description"),
-      icon: "🏥",
-      href: getLocalizedHref("/projects/ais"),
-      backgroundColor: "#0066FF", // 蓝色
-    },
-    {
-      title: t("Solutions.coreBusiness.smartLand.title"),
-      description: t("Solutions.coreBusiness.smartLand.description"),
-      icon: "🌍",
-      href: getLocalizedHref("/projects/smart-land"),
-      backgroundColor: "#10B981", // 绿色
-    },
-  ];
 
   return (
     <>
@@ -121,7 +108,7 @@ export default async function SolutionsPage({
         description={t("Solutions.description")}
       />
 
-      {/* Core Business Section - 使用 ProjectCard 展示 */}
+      {/* Core Business Section */}
       <Section background="gray">
         <SectionHeader
           title={t("Solutions.coreBusiness.title")}
@@ -129,16 +116,16 @@ export default async function SolutionsPage({
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {coreBusinessProjects.map((project) => (
-            <ProjectCard
-              key={project.href}
-              title={project.title}
-              description={project.description}
-              icon={project.icon}
-              href={project.href}
-              learnMore={tCommon("learnMore")}
-              backgroundColor={project.backgroundColor}
-            />
+          {coreBusinessItems.map((item, index) => (
+            <Link key={index} href={getLocalizedHref(item.href)}>
+              <Card bordered hover className="h-full">
+                <IconBadge icon={item.icon} />
+                <h3 className="text-xl font-semibold text-[#003366] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 mb-4">{item.description}</p>
+              </Card>
+            </Link>
           ))}
         </div>
       </Section>
