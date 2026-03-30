@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
-import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain, Heart, MapPin } from "lucide-react";
+import { Factory, Hospital, Building2, ShoppingCart, Car, Cpu, TrendingUp, Shield, Brain } from "lucide-react";
 import { Hero } from "@/components/Hero";
+import { ProjectsSection } from "@/components/ProjectsSection";
 import { Section, SectionHeader, Card, CTASection, IconBadge } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -54,21 +54,6 @@ const solutions = [
   },
 ];
 
-const coreBusinessItems = [
-  {
-    icon: Heart,
-    title: "AI 医学影像",
-    description: "AIS脊柱侧弯智能筛查，无辐射3D扫描+AI分析",
-    href: "/projects/ais",
-  },
-  {
-    icon: MapPin,
-    title: "智慧地产/国土",
-    description: "与北京瞭望神州深度合作，视频图像智能分析",
-    href: "/projects/smart-land",
-  },
-];
-
 const advantages = [
   { key: "academic" },
   { key: "crossdisciplinary" },
@@ -108,30 +93,8 @@ export default async function SolutionsPage({
         description={t("Solutions.description")}
       />
 
-      {/* Core Business Section */}
-      <Section background="gray">
-        <SectionHeader
-          title={t("Solutions.coreBusiness.title")}
-          description={t("Solutions.coreBusiness.description")}
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {coreBusinessItems.map((item, index) => (
-            <Link key={index} href={getLocalizedHref(item.href)}>
-              <Card bordered hover className="h-full">
-                <IconBadge icon={item.icon} />
-                <h3 className="text-xl font-semibold text-[#003366] mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 mb-4">{item.description}</p>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      </Section>
-
       {/* Advantages Section */}
-      <Section background="white">
+      <Section background="gray">
         <SectionHeader title={t("Solutions.advantages.title")} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -152,7 +115,7 @@ export default async function SolutionsPage({
       </Section>
 
       {/* Technologies Section */}
-      <Section background="gray">
+      <Section background="white">
         <SectionHeader
           title={t("Solutions.tech.title")}
           description={t("Solutions.tech.description")}
@@ -177,6 +140,9 @@ export default async function SolutionsPage({
           ))}
         </div>
       </Section>
+
+      {/* Core Business Section - ProjectsSection */}
+      <ProjectsSection locale={locale} background="gray" />
 
       {/* Industry Solutions Grid */}
       <Section background="white">
