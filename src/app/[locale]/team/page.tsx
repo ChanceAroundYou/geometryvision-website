@@ -4,8 +4,16 @@ import { GraduationCap, FlaskConical, Award, Users } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { Section, SectionHeader, IconBadge, Card, CTASection, TeamMemberCard } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Team - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("team")} - ${t("brand")}`,
+  };
 };
 
 const teamMembers = [

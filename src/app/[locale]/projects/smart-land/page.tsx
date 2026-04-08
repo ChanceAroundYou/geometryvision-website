@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProjectDetailTemplate } from "@/components/ProjectDetailTemplate";
 
-export const metadata: Metadata = {
-  title: "Smart Land - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("projects.smartland.title")} - ${t("brand")}`,
+  };
 };
+
 
 const features = [
   {

@@ -5,9 +5,18 @@ import { Users, Target, Award, Lightbulb, ArrowRight, Sparkles, FlaskConical, Us
 import { Hero } from "@/components/Hero";
 import { Section, SectionHeader, IconBadge, Card, Button, TimelineItem } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "About - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("about")} - ${t("brand")}`,
+  };
 };
+
 
 const values = [
   {

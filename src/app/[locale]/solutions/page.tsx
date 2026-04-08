@@ -5,9 +5,18 @@ import { Hero } from "@/components/Hero";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { Section, SectionHeader, Card, CTASection, IconBadge } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Solutions - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("solutions")} - ${t("brand")}`,
+  };
 };
+
 
 const solutions = [
   {

@@ -4,9 +4,18 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { ContactForm } from "./contact-form";
 import { Hero } from "@/components/Hero";
 
-export const metadata: Metadata = {
-  title: "Contact - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("contact")} - ${t("brand")}`,
+  };
 };
+
 
 const contactInfo = [
   {

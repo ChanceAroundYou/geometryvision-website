@@ -5,9 +5,18 @@ import { Eye, Scan, BarChart3, Layers } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { Section, SectionHeader, Card, CTASection, Tag } from "@/components/ui";
 
-export const metadata: Metadata = {
-  title: "Products - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("products")} - ${t("brand")}`,
+  };
 };
+
 
 const products = [
   {

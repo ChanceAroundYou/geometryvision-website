@@ -153,8 +153,8 @@
       "chenran": {
         "name": "LIN Chenran",
         "education": "Ph.D., CUHK",
-        "role": "CEO",
-        "desc": "PhD from CUHK (2024), researcher in quasiconformal mapping and visual AI, leads overall strategy and product development",
+        "role": "Chief Executive Officer",
+        "desc": "PhD from CUHK, researcher in quasiconformal mapping and visual AI, leads overall strategy and product development",
         "expertise": "Product Development, Strategic Planning, Deep Learning"
       },
       "lei": {
@@ -168,14 +168,14 @@
         "name": "LI Zheng",
         "education": "Ph.D., UCAS",
         "role": "COO",
-        "desc": "PhD from UCAS (2014), co-founder of Outlook Shenzhou, deep expertise in spatio-temporal intelligence and earth science big data",
+        "desc": "PhD from UCAS, co-founder of Outlook Shenzhou, deep expertise in spatio-temporal intelligence and earth science big data",
         "expertise": "Spatio-temporal Intelligence, Earth Big Data, Operations"
       },
       "tan": {
         "name": "TAN Xingzi",
         "education": "M.Sc., CUHK",
         "role": "CFO",
-        "desc": "M.Sc. from CUHK (2018), former analyst at BOCOM and DBS, specializing in financial risk and industry research",
+        "desc": "M.Sc. from CUHK, former analyst at BOCOM and DBS, specializing in financial risk and industry research",
         "expertise": "Financial Risk Management, Industry Research, Investment Analysis"
       }
     },

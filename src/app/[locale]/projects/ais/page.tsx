@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ProjectDetailTemplate } from "@/components/ProjectDetailTemplate";
 
-export const metadata: Metadata = {
-  title: "AIS - GeometryVision",
+export async function generateMetadata({
+  params,
+}: {
+  params?: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const locale = (await params)?.locale ?? "zh-cn";
+  const t = await getTranslations({ locale });
+  return {
+    title: `${t("projects.ais.title")} - ${t("brand")}`,
+  };
 };
+
 
 const features = [
   {
