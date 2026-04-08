@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Users, Target, Award, Lightbulb, ArrowRight, Sparkles, FlaskConical, UserCheck } from "lucide-react";
 import { Hero } from "@/components/Hero";
@@ -11,9 +10,9 @@ export async function generateMetadata({
   params?: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const locale = (await params)?.locale ?? "zh-cn";
-  const t = await getTranslations({ locale });
+  const t = await getTranslations({ locale, namespace: "About" });
   return {
-    title: `${t("about")} - ${t("brand")}`,
+    title: t("metaTitle"),
   };
 };
 

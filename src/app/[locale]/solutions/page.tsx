@@ -11,9 +11,9 @@ export async function generateMetadata({
   params?: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const locale = (await params)?.locale ?? "zh-cn";
-  const t = await getTranslations({ locale });
+  const t = await getTranslations({ locale, namespace: "Solutions" });
   return {
-    title: `${t("solutions")} - ${t("brand")}`,
+    title: t("metaTitle"),
   };
 };
 
@@ -159,7 +159,7 @@ export default async function SolutionsPage({
           title={t("Solutions.industrySolutions.title")}
           description={t("Solutions.industrySolutions.description")}
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
             <Card key={index} bordered hover>

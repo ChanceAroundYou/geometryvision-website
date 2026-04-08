@@ -8,9 +8,9 @@ export async function generateMetadata({
   params?: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const locale = (await params)?.locale ?? "zh-cn";
-  const t = await getTranslations({ locale });
+  const t = await getTranslations({ locale, namespace: "Project.AIS" });
   return {
-    title: `${t("projects.ais.title")} - ${t("brand")}`,
+    title: t("metaTitle"),
   };
 };
 

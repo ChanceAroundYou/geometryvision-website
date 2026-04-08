@@ -91,6 +91,7 @@
   },
   "About": {
     "title": "About Us",
+    "metaTitle": "About Us - GeometryVision",
     "description": "Unlocking Visual Intelligence with the Power of Mathematics",
     "mission": {
       "title": "Our Mission",
@@ -134,6 +135,7 @@
   },
   "Team": {
     "title": "Our Team",
+    "metaTitle": "Our Team - GeometryVision",
     "description": "From CUHK Department of Mathematics, driving visual AI innovation with the power of mathematics",
     "advantages": {
       "title": "Team Advantages",
@@ -186,7 +188,7 @@
         "name": "LAW Sheung Wai",
         "affiliation": "CUHK Department of Medicine",
         "role": "Clinical Advisor",
-        "desc": "Clinical specialist in orthopedics and traumatology, senior expert in scoliosis"
+        "desc": "Specialist in Orthopaedics; Assistant Dean, Faculty of Medicine, CUHK; Fellow of Hong Kong Academy of Medicine (Orthopaedics)"
       },
       "lee": {
         "name": "LEE Yuk Wai",
@@ -204,6 +206,7 @@
   },
   "Products": {
     "title": "Products",
+    "metaTitle": "Products - GeometryVision",
     "description": "Mathematics-driven visual AI products, bringing you more precise and intelligent solutions",
     "techAdvantage": {
       "title": "Technical Advantages",
@@ -248,6 +251,7 @@
   },
   "Solutions": {
     "title": "Solutions",
+    "metaTitle": "Solutions - GeometryVision",
     "description": "Tailored visual AI solutions for different industry needs",
     "coreBusiness": {
       "title": "Core Business",
@@ -374,6 +378,7 @@
   },
   "Contact": {
     "title": "Contact Us",
+    "metaTitle": "Contact Us - GeometryVision",
     "contactTitle": "Get in Touch",
     "description": "We look forward to hearing from you to explore the infinite possibilities of visual intelligence",
     "info": {
@@ -428,6 +433,7 @@
   },
   "Project": {
     "AIS": {
+      "metaTitle": "AIS Scoliosis Intelligent Screening System - GeometryVision",
       "hero": {
         "title": "AIS Scoliosis Intelligent Screening System",
         "description": "Radiation-free 3D scanning + AI intelligent analysis, protecting adolescent spine health"
@@ -476,6 +482,7 @@
         }
       },
       "techAdvantage": {
+        "title": "Technical Advantages",
         "items": {
           "1": "Optical 3D scanning, no radiation",
           "2": "AI automatic analysis, results in 5 seconds",
@@ -493,6 +500,7 @@
       }
     },
     "SmartLand": {
+      "metaTitle": "Smart Land Solution - GeometryVision",
       "hero": {
         "title": "Smart Land Solution",
         "description": "Video image intelligent analysis, protecting every inch of land"
@@ -576,6 +584,7 @@
         }
       },
       "partners": "Strategic Cooperation",
+      "partnerDesc": "GeometryVision has established a deep strategic partnership with Beijing Liwnas Technology Co., Ltd., combining strengths in AI visual analysis and land informatization to provide intelligent solutions for natural resource management, urban planning, environmental protection and other fields.",
       "partnerDescription": "GeometryVision has established a deep strategic partnership with Beijing Liwnas Technology Co., Ltd., combining strengths in AI visual analysis and land informatization to provide intelligent solutions for natural resource management, urban planning, environmental protection and other fields.",
       "cta": {
         "title": "Start Your Smart Land Journey",

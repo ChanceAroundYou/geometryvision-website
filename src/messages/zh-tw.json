@@ -91,6 +91,7 @@
   },
   "About": {
     "title": "關於我們",
+    "metaTitle": "關於我們 - 幾何視界",
     "description": "用數學的力量，開啟視覺智慧的新視界",
     "mission": {
       "title": "我們的使命",
@@ -134,6 +135,7 @@
   },
   "Team": {
     "title": "核心團隊",
+    "metaTitle": "核心團隊 - 幾何視界",
     "description": "源自香港中文大學數學系，用數學的力量推動視覺 AI 革新",
     "advantages": {
       "title": "團隊優勢",
@@ -186,7 +188,7 @@
         "name": "羅尚尉",
         "affiliation": "CUHK醫學院",
         "role": "臨床顧問",
-        "desc": "骨科與創傷學臨床專業顧問，脊柱側彎領域資深專家"
+        "desc": "骨科專科醫生、香港中文大學醫學院助理院長、香港醫學專科學院院士（骨科）"
       },
       "lee": {
         "name": "李郁偉",
@@ -204,6 +206,7 @@
   },
   "Products": {
     "title": "產品中心",
+    "metaTitle": "產品中心 - 幾何視界",
     "description": "數學驅動的視覺AI產品，為您帶來更精準、更智慧的解決方案",
     "techAdvantage": {
       "title": "技術優勢",
@@ -211,7 +214,8 @@
       "accuracy": "識別準確率",
       "latency": "低延遲",
       "responseTime": "響應時間",
-      "scenarios": "應用場景"
+      "scenarios": "應用場景",
+      "robustness": "穩健性"
     },
     "cta": {
       "title": "想了解更多產品詳情？",
@@ -247,6 +251,7 @@
   },
   "Solutions": {
     "title": "解決方案",
+    "metaTitle": "解決方案 - 幾何視界",
     "description": "針對不同行業需求，提供定制化的視覺AI解決方案",
     "coreBusiness": {
       "title": "核心業務",
@@ -373,6 +378,7 @@
   },
   "Contact": {
     "title": "聯繫我們",
+    "metaTitle": "聯繫我們 - 幾何視界",
     "contactTitle": "聯繫我們",
     "description": "期待與您的交流，共同探索視覺智慧的無限可能",
     "info": {
@@ -427,6 +433,7 @@
   },
   "Project": {
     "AIS": {
+      "metaTitle": "AIS脊柱側彎智能篩查系統 - 幾何視界",
       "hero": {
         "title": "AIS脊柱側彎智能篩查系統",
         "description": "無輻射3D掃描 + AI智能分析，守護青少年脊柱健康"
@@ -475,6 +482,7 @@
         }
       },
       "techAdvantage": {
+        "title": "技術優勢",
         "items": {
           "1": "光學3D掃描，無輻射",
           "2": "AI自動分析，5秒內出結果",
@@ -492,6 +500,7 @@
       }
     },
     "SmartLand": {
+      "metaTitle": "智慧國土解決方案 - 幾何視界",
       "hero": {
         "title": "智慧國土解決方案",
         "description": "視頻圖像智能分析，守護每一寸土地"
@@ -575,6 +584,7 @@
         }
       },
       "partners": "戰略合作",
+      "partnerDesc": "幾何視界與北京瞭望神州科技有限公司建立深度戰略合作夥伴關係，結合雙方在AI視覺分析和國土信息化領域的優勢，共同為自然資源管理、城鄉規劃、環境保護等領域提供智能化解決方案。",
       "partnerDescription": "幾何視界與北京瞭望神州科技有限公司建立深度戰略合作夥伴關係，結合雙方在AI視覺分析和國土信息化領域的優勢，共同為自然資源管理、城鄉規劃、環境保護等領域提供智能化解決方案。",
       "cta": {
         "title": "開啟智慧國土新篇章",

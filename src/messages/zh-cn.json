@@ -90,7 +90,8 @@
     }
   },
   "About": {
-    "title": "关于我们",
+    "title": "关于我们 - 几何视界",
+    "metaTitle": "关于我们 - 几何视界",
     "description": "用数学的力量，开启视觉智能的新视界",
     "mission": {
       "title": "我们的使命",
@@ -134,6 +135,7 @@
   },
   "Team": {
     "title": "核心团队",
+    "metaTitle": "核心团队 - 几何视界",
     "description": "源自香港中文大学数学系，用数学的力量推动视觉 AI 革新",
     "advantages": {
       "title": "团队优势",
@@ -186,7 +188,7 @@
         "name": "罗尚尉",
         "affiliation": "CUHK医学院",
         "role": "临床顾问",
-        "desc": "骨科与创伤学临床专业顾问，脊柱侧弯领域资深专家"
+        "desc": "骨科专科医生、香港中文大学医学院助理院长、香港医学专科学院院士（骨科）"
       },
       "lee": {
         "name": "李郁伟",
@@ -204,6 +206,7 @@
   },
   "Products": {
     "title": "产品中心",
+    "metaTitle": "产品中心 - 几何视界",
     "description": "数学驱动的视觉AI产品，为您带来更精准、更智能的解决方案",
     "techAdvantage": {
       "title": "技术优势",
@@ -211,7 +214,8 @@
       "accuracy": "识别准确率",
       "responseTime": "响应时间",
       "scenarios": "应用场景",
-      "latency": "响应延迟"
+      "latency": "响应延迟",
+      "robustness": "鲁棒性"
     },
     "items": {
       "vision": {
@@ -247,6 +251,7 @@
   },
   "Solutions": {
     "title": "解决方案",
+    "metaTitle": "解决方案 - 几何视界",
     "description": "针对不同行业需求，提供定制化的视觉AI解决方案",
     "coreBusiness": {
       "title": "核心业务",
@@ -372,6 +377,7 @@
   },
   "Contact": {
     "title": "联系我们",
+    "metaTitle": "联系我们 - 几何视界",
     "contactTitle": "联系我们",
     "description": "期待与您的交流，共同探索视觉智能的无限可能",
     "info": {
@@ -426,6 +432,7 @@
   },
   "Project": {
     "AIS": {
+      "metaTitle": "AIS脊柱侧弯智能筛查系统 - 几何视界",
       "hero": {
         "title": "AIS脊柱侧弯智能筛查系统",
         "description": "无辐射3D扫描 + AI智能分析，守护青少年脊柱健康"
@@ -492,6 +499,7 @@
       }
     },
     "SmartLand": {
+      "metaTitle": "智慧国土解决方案 - 几何视界",
       "hero": {
         "title": "智慧国土解决方案",
         "description": "视频图像智能分析，守护每一寸土地"
@@ -531,22 +539,38 @@
         "natural": {
           "title": "自然资源监测",
           "description": "对耕地、林地、草地等自然资源进行动态监测，及时发现占用和破坏行为",
-          "cases": "非法占用耕地监测,耕地撂荒检测,林地破坏预警"
+          "cases": [
+            "非法占用耕地监测",
+            "耕地撂荒检测",
+            "林地破坏预警"
+          ]
         },
         "urban": {
           "title": "城乡规划监管",
           "description": "辅助城乡规划部门进行建设行为监管，识别未批先建、超期建设等违规行为",
-          "cases": "违建自动识别,施工进度监控,规划核实辅助"
+          "cases": [
+            "违建自动识别",
+            "施工进度监控",
+            "规划核实辅助"
+          ]
         },
         "environment": {
           "title": "环境保护巡查",
           "description": "对自然保护区、湿地、生态红线区域进行智能监控，保护生态环境",
-          "cases": "生态破坏监测,排污口检测,垃圾分类巡查"
+          "cases": [
+            "生态破坏监测",
+            "排污口检测",
+            "垃圾分类巡查"
+          ]
         },
         "emergency": {
           "title": "应急响应支持",
           "description": "在自然灾害发生时，快速评估受灾区域，辅助应急指挥决策",
-          "cases": "洪涝灾害评估,山体滑坡监测,火灾面积测算"
+          "cases": [
+            "洪涝灾害评估",
+            "山体滑坡监测",
+            "火灾面积测算"
+          ]
         }
       },
       "techAdvantage": {
